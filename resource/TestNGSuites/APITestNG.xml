@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="CallzenAPITestSuite">
+  <listeners>
+    <listener class-name="Utility.TestListeners"/>
+  </listeners>
+  <test name="CallzenAPITest">
+    <classes>
+      <class name="TestCases.callzen.AgentcallpageFiltersWeb"/>
+      <class name="TestCases.callzen.InstructionalMomentAPIs"/>
+      <class name="TestCases.callzen.KeywordMomentsAPIs"/>
+      <class name="TestCases.callzen.SemanticMomentAPIs"/>
+    </classes>
+  </test>
+</suite>

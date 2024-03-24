@@ -1,0 +1,26 @@
+[23:04:59] INFO  TestCases.callzen.WebTestCases.MometnsSelenium - WebBrowser Closed
+[23:12:43] INFO  TestCases.callzen.WebTestCases.MometnsSelenium - Chrome Browser Launched
+[23:12:45] INFO  TestCases.callzen.WebTestCases.MometnsSelenium - Navigated to: https://nobroker.callzen.ai/
+[23:12:46] INFO  Pages.callzen.CallzenPage - User Entering  Email 'milind.ghongade@nobroker.in'
+[23:12:46] INFO  Pages.callzen.CallzenPage - User Entering  Password 'admin'
+[23:12:49] INFO  Pages.callzen.CallzenPage - Clicking on Sign In Button
+[23:12:49] INFO  TestCases.callzen.WebTestCases.MometnsSelenium - Selecting the 'Moments' from Header
+[23:12:53] INFO  TestCases.callzen.WebTestCases.MometnsSelenium - EnteringSemantic Moment_testcct,Clicking on Global and Positive
+[23:12:56] INFO  Pages.callzen.CallzenPage - Clicked on Create Moment Button
+[23:12:59] INFO  Pages.callzen.CallzenPage - Entered Moment Name 'Semantic Moment_testcct' in text Field
+[23:13:03] INFO  Pages.callzen.CallzenPage - Clicked on 'Global'Button
+[23:13:06] INFO  Pages.callzen.CallzenPage - Clicked on 'Positive'Button
+[23:13:09] INFO  Pages.callzen.CallzenPage - Clicked on Select Conversation Element 
+[23:13:12] INFO  Pages.callzen.CallzenPage - Clicked on'Call' DropDown Options
+[23:13:15] INFO  Pages.callzen.CallzenPage - Clicked on'Next' Button
+[23:13:15] INFO  TestCases.callzen.WebTestCases.MometnsSelenium - Selecting the 'Semantic Moment' & Entering Search 'Is the property still available for rent?' Sentence 
+[23:13:18] INFO  Pages.callzen.CallzenPage -  Clicked on 'Semantic Moment' and Entered the search Are you interested in taking the subscription?
+[23:13:19] INFO  Pages.callzen.CallzenPage - Pressed the 'Enter' Key 
+[23:14:29] INFO  Pages.callzen.CallzenPage - Clicked on the 'Highlight Cross' Button
+[23:14:35] INFO  Pages.callzen.CallzenPage - Clicked on Take Action Button 
+[23:14:35] INFO  Pages.callzen.CallzenPage - Clicking on Add anyway Action Button 
+[23:14:35] INFO  Pages.callzen.CallzenPage - Clicked on Take Action Button 
+[23:14:35] INFO  Pages.callzen.CallzenPage - Clicking on Add anyway Action Button 
+[23:14:36] INFO  Pages.callzen.CallzenPage - Clicked on Take Action Button 
+[23:14:36] INFO  Pages.callzen.CallzenPage - Clicking on Add anyway Action Button 
+[23:14:39] INFO  TestCases.callzen.WebTestCases.MometnsSelenium - WebBrowser Closed
