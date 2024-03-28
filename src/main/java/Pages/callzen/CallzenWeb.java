@@ -1,12 +1,19 @@
 package Pages.callzen;
 
 import CommonUtility.CommonPlaywright;
+import com.microsoft.playwright.ElementHandle;
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.PlaywrightException;
+import com.microsoft.playwright.options.ElementState;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.*;
 
 import static Pages.callzen.Locators.*;
@@ -26,112 +33,270 @@ public class CallzenWeb extends CommonPlaywright {
     }
 
 
-    public void phraseAction(String action) throws InterruptedException {
+    public void bulkMomentTagging(String startDate, String endDate) throws InterruptedException {
+        log("Clicking on Tag from Now Button");
+        page.locator(tagFromNowBtm);
+        LocalDate parsedStartDate = LocalDate.parse(startDate.substring(0, 8), DateTimeFormatter.ofPattern("ddMMyyyy"));
+        LocalDate parsedEndDate = LocalDate.parse(endDate.substring(0, 8), DateTimeFormatter.ofPattern("ddMMyyyy"));
+
+        while (true) {
+            waitFor(2);
+            log("Entering from Bulk Tagging");
+            fill(bulkTagFromDateTimeLoc, String.valueOf(startDate));
+
+            log("Entering from Bulk Tagging To" + endDate);
+            fill(bulkTagToDateTimeLoc, endDate);
+            if (isLocatorPresent(page, totalCallToBeAffected, 3)) {
+                int call = Integer.parseInt(page.innerText(totalCallToBeAffected));
+                if (call == 0) {
+                    parsedStartDate = parsedStartDate.minusDays(1);
+                    startDate = parsedStartDate.format(DateTimeFormatter.ofPattern("ddMMyyyy")) + startDate.substring(8);
+                    endDate = parsedEndDate.format(DateTimeFormatter.ofPattern("ddMMyyyy")) + endDate.substring(8);
+                } else {
+                    break; // Exit the loop if call is not 0
+                }
+            } else {
+                String warningMsg = page.locator(callLimitWarnings).innerText();
+                String text = warningMsg.replaceAll("[^0-9,]", "");
+                String[] str = text.split(",");
+                int totalCalls = Integer.parseInt(str[0]);
+                int callLimit = Integer.parseInt(str[1]);
+                if (totalCalls > callLimit) {
+                    parsedStartDate = parsedStartDate.plusDays(1);
+                    startDate = parsedStartDate.format(DateTimeFormatter.ofPattern("ddMMyyyy")) + startDate.substring(8);
+                } else {
+                    click(submitBtn);
+                    log("Clicked on submit Button");
+                }
+            }
+        }
+        click(submitBtn);
+        log("Clicked on submit Button");
+
+        click(finishBtn);
+        log("Clicked on submit Button");
+    }
+
+    public String getMomentDetails() throws Exception {
+        List<ElementHandle> columns = page.querySelectorAll(momentsTable);
+        StringBuilder rowData = new StringBuilder();
+        for (int i = 1; i < columns.size(); i++) {
+            String a = page.locator("//tbody/tr[1]/td[" + i + "]").innerText();
+            rowData.append(a).append(",");
+        }
+
+        click(finishBtn);
+        log("Clicked on Finish Button");
+        return rowData.toString();
+    }
+
+    public void deleteMoments() {
+        click(editAccordion);
+        log("Clicked on the 'Accordion' Button");
+
+        click(deleteMomentBt);
+        log("Clicked on the 'Delete' Button");
+
+        String name = page.locator(momentsNameText).innerText();
+        System.out.println(name);
+        fill(textBox, name);
+        log("Entered the 'MomentName' in TextBox");
+
+        click(confirmBtn);
+        log("Clicked on 'Confirm' button");
+    }
+
+    public String getDeletedText() throws Exception {
+        String msg = page.locator(momentsNameText).innerText();
+        return msg;
+    }
+
+    public void selectPhrases(String types, String sentence, int selectCount, String action) throws Exception {
+        waitForElement(page, momentType.replace("name", types), 5);
+        click(momentType.replace("name", types));
+        fill(searchBar, sentence);
+        log("Clicked on '" + types + "' and Entered the search " + sentence);
+        page.keyboard().press("Enter");
+        log("Pressed the 'Enter' Key ");
+        waitForLocatorClickable(page, suggetionsList, 120);
+        List<ElementHandle> list = page.querySelectorAll(suggetionsList);
+        int elementsToClick = Math.min(selectCount, list.size());
+        for (int i = 0; i < elementsToClick; i++) {
+            list.get(i).click();
+            log("Clicking on 'Phrases Add' Button ");
+        }
+        waitFor(2);
+        //page.evaluate("window.scrollTo(0, -500);");
         try {
-            if (isLocatorPresent(page, takeActionBtn, 5)) {
-                click(takeActionBtn);
-                log("Clicked on Take Action Button ");
-                Locator locators = page.locator(takeActionOptions);
-                for (int i = 0; i < locators.count(); i++) {
-                    if (locators.innerText() == action) {
-                        locators.nth(i).click();
-                    } else if (locators.innerText() == action) {
-                        locators.nth(i).click();
-                        waitForElement(page, suggestSimplerPhraseOptions, 120);
-                        Locator list = page.locator(suggestSimplerPhraseOptions);
-                        for (int j = 0; j < list.count(); j++) {
-                            list.nth(j).click();
-                        }
+            handlePhraseTooLongErrors();
+            clickNext();
+        } catch (Exception e) {
+            log("Exception occurred in Handling 'Highlight': " + e.getMessage());
+        }
+        try {
+            HandlePhraseMatchingErrors(action);
+            HandleClusterError();
+        } catch (Exception e) {
+            log("Exception occurred in Handling 'Cluster and Phrase Matching Errors' : " + e.getMessage());
+        }
+        clickNext();
+    }
+
+    public String getMomentCreatedText() {
+        isLocatorPresent(page, momentCreatedSuccessfullyLLoc, 3);
+        String text = page.locator(momentCreatedSuccessfullyLLoc).innerText();
+        return text;
+    }
+
+    public void submitMomentFeedback() {
+        click(giveFeedBackBtn);
+        log("Clicked on 'Feedback' button");
+        if (isLocatorPresent(page, feedbackPositivePositive, 5)) {
+            submitPositiveFeedback();
+        }
+        waitFor(3);
+        String msg = page.locator(feedbackSubmittedSuccessfully).innerText();
+        Assert.assertEquals(msg, "Success! Moment feedback submitted successfully");
+        click(NextBtn);
+    }
+
+    public void submitPositiveFeedback() {
+        boolean moreLists = true;
+        do {
+            List<ElementHandle> positiveList = page.querySelectorAll(feedbackPositivePositive);
+            for (ElementHandle positive : positiveList) {
+                positive.click();
+            }
+            click(submitBtn);
+            log("Clicked on 'Submit' button");
+            waitFor(5);
+            List<ElementHandle> nextList = page.querySelectorAll(feedbackPositivePositive);
+            moreLists = !nextList.isEmpty();
+        } while (moreLists);
+    }
+
+    public void handlePhraseTooLongErrors() {
+        if (isLocatorPresent(page, highlightCross, 5)) {  // Check for element within 5 seconds
+            log("'Highlight' Button Appeared");
+            List<ElementHandle> highlightCrosses = page.querySelectorAll(highlightCross);
+            for (int i = 0; i < highlightCrosses.size(); i++) {
+                try {
+                    ElementHandle highlightCross = highlightCrosses.get(i);
+                    highlightCross.click();
+                    if (highlightCross.boundingBox() == null) { // Check if bounding box exists
+                        highlightCross.scrollIntoViewIfNeeded();
+                        highlightCross.click();
+                        log("Clicked on Cross icon number " + (i + 1));
                     } else {
-                        if (locators.innerText() == action) {
-                            locators.nth(i).click();
+                        log("Cross icon number " + (i + 1) + " not found in the DOM");
+                    }
+                } catch (Exception e) {
+                    log("Error occurred while clicking on Cross icon number " + (i + 1) + ": " + e.getMessage());
+                }
+            }
+        } else {
+            log("'Highlight' Button not found");
+        }
+
+    }
+
+    public void HandlePhraseMatchingErrors(String action) {
+        if (isLocatorPresent(page, takeActionBtn, 5)) {
+            log("'Phrase does not match.'Take Action button appeared.");
+            List<ElementHandle> takeActionList = page.querySelectorAll(takeActionBtn);
+            for (ElementHandle takeActionElement : takeActionList) {
+                takeActionElement.scrollIntoViewIfNeeded();
+                takeActionElement.click();
+                log("Clicked on Take Action Button ");
+                waitFor(2);
+                List<ElementHandle> takeActionOptionList = page.querySelectorAll(takeActionOptions);
+                for (ElementHandle ActionOption : takeActionOptionList) {
+                    if (ActionOption.innerText().equals(action)) {
+                        ActionOption.scrollIntoViewIfNeeded();
+                        ActionOption.click();
+                        log("Clicked on " + action + " Action Button");
+                    } else {
+                        if (ActionOption.innerText().equals(action)) { // Use else if here
+                            ActionOption.click();
+                            waitForLocatorClickable(page, suggestSimplerPhraseOptions, 120);
+                            List<ElementHandle> phraseList = page.querySelectorAll(suggestSimplerPhraseOptions);
+                            for (ElementHandle phrase : phraseList) {
+                                phrase.click();
+                            }
                         }
                     }
                 }
-            } else {
-                log("Take Action Button not present ");
             }
-        } catch (Exception e) {
-            log("Exception occurred in phraseAction: " + e.getMessage());
         }
     }
 
-    public void highlightAction() throws InterruptedException {
-        try {
-            if (isLocatorPresent(page, highlight, 5)) {
-                Locator locList = page.locator(highlight);
-                for (int i = 0; i < locList.count(); i++) {
-                    click(highlightCross);
-                    log("Clicked on the 'Highlight Cross' Button");
-                }
-            } else {
-                log("Highlight Button Not not present");
+    public void HandleClusterError() {
+        if (isLocatorPresent(page, clusterError, 5)) {
+            log("'Error : Cluster Error Occurred'");
+            List<ElementHandle> addButtons = page.querySelectorAll(addAnywayBtn);
+            for (ElementHandle handle : addButtons) {
+                handle.scrollIntoViewIfNeeded();
+                handle.click();
+                log("Clicked on 'Add Anyway' Button");
             }
-        } catch (Exception e) {
-            log("Exception occurred in highlightAction: " + e.getMessage());
         }
     }
-
-    public void selectPhrases(String types, String sentence, int selectCount, String action) throws InterruptedException {
-        click(momentType.replace("name", types));
-        fill(searchBar, "discount");
-        log(" Clicked on '" + types + "' and Entered the search " + sentence + "");
-
-        page.keyboard().press("Enter");
-        log("Pressed the 'Enter' Key ");
-
-        waitForElement(page, suggetionsList, 120);
-        Locator listEle = page.locator(suggetionsList);
-        int sentenceCount = 0;
-        int totalCount = listEle.count();
-        for (int i = 0; i < Math.min(selectCount, totalCount); i++) {
-            listEle.nth(i).click();
-        }
-
-        highlightAction();
-        log("Clicking on 'Next' Button");
-        waitForElement(page,NextBtn, 2);
-        click(NextBtn);
-
-        phraseAction(action);
-        click(NextBtn);
-    }
-
-
-     /* String text = listEle.nth(i).innerText();
-            int wordCount = text.split(" ").length;
-            if (wordCount >= 22) {
-                listEle.nth(i).click();
-                sentenceCount++;
-                if (sentenceCount == 5) {
-                    break;
-                }
-            }*/
 
     public void createMoment(String MomentName, String Global, String emotion) {
-        page.setViewportSize(1400, 1000);
         click(createMomentBtn);
         log("Clicked on Create Moment Button");
+        try {
+            fill(momentNameTxt, MomentName);
+            log("Entered Moment Name '" + MomentName + "' in text Field");
 
-        fill(momentNameTxt, MomentName);
-        log("Entered Moment Name '" + MomentName + "' in text Field");
+            click(FilterBtn.replace("type", Global));
+            log("Clicked on '" + Global + "'Button");
 
-        click(FilterBtn.replace("type", Global));
-        log("Clicked on '" + Global + "'Button");
+            click(FilterBtn.replace("type", emotion));
+            log("Clicked on '" + emotion + "'Button");
+        } catch (Exception e) {
+            log("Error: An unexpected error occurred while Buttons");
+        }
+        try {
+            click(selectConversationType);
+            log("Clicked on Select Conversation Element ");
 
-        click(FilterBtn.replace("type", emotion));
-        log("Clicked on '" + emotion + "'Button");
+            click(conversationTypeDrp);
+            log("Clicked on'Call' DropDown Options");
 
-        click(selectConversationType);
-        log("Clicked on Select Conversation Element ");
+            click(callerType);
+            log("Clicking on 'Select Dropdown'");
 
-        click(conversationTypeDrp);
-        log("Clicked on'Call' DropDown Options");
-
-        click(NextBtn);
-        log("Clicked on'Next' Button");
+            click(selectAllCallerType);
+            log("Clicking on 'Select All'");
+        } catch (Exception e) {
+            log("Error: An unexpected error occurred while Selecting filter values");
+        }
+        click(sideEle);
+        conditionalMoment();
+        clickNext();
     }
 
+    public void clickNext() {
+        waitFor(1);
+        click(NextBtn);
+        log("Clicked on 'Next' Button ");
+    }
+
+    public void conditionalMoment() {
+        if (!isLocatorPresent(page, conditionalCheckBox, 5)) {
+            scrollIntoView(page, conditionalCheckBox);
+        }
+        click(conditionalCheckBox);
+        log("Clicked on the 'Conditional Moment' checkbox");
+
+        click(selectParentMomentDrp);
+        log("Clicked on the 'Select Parent Moment' dropdown");
+
+        Locator parentMomentList = page.locator(parentList);
+        parentMomentList.nth(0).click();
+        log("Clicked on the first parent moment");
+    }
 
     public void login(String email, String password) {
         log("Entering Email: " + email);
@@ -143,6 +308,7 @@ public class CallzenWeb extends CommonPlaywright {
         log("Clicking on 'Sign In' Button");
         click(loginBtn);
     }
+
 
     public String getCheckedColumns() throws InterruptedException {
         click(columnFilterBtn);

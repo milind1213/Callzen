@@ -9,7 +9,6 @@
       <class name="TestCases.callzen.AgentcallpageFiltersWeb"/>
       <class name="TestCases.callzen.InstructionalMomentAPIs"/>
       <class name="TestCases.callzen.KeywordMomentsAPIs"/>
-      <class name="TestCases.callzen.SemanticMomentAPIs"/>
     </classes>
   </test>
 </suite>

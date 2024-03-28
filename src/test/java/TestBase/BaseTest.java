@@ -41,7 +41,7 @@ public class BaseTest extends AndroidDrivers {
 
     public WebDriver getWebDriver() {
         webBrowser = config.callzenProp("Web").getProperty("browser");
-        driver = new WebBrowser().init_driver(webBrowser);
+        driver = new WebBrowser().getSeleniumDriver(webBrowser);
         if (webBrowser.equals("firefox")) {
             log("Firefox Browser Launched");
         } else {
@@ -59,6 +59,8 @@ public class BaseTest extends AndroidDrivers {
             page = new WebBrowser().getPage(webBrowser);
             log("Successfully Launched '" + webBrowser + "' Browser");
             currentDriver = Driver.Playwright;
+            page.setViewportSize(1366,768);
+            page.evaluate("document.body.style.zoom = 0.8;");
             page.navigate(WEB_URL);
             log("Navigated to: " + WEB_URL);
         } catch (Exception e) {
@@ -80,7 +82,7 @@ public class BaseTest extends AndroidDrivers {
         }
     }
 
-    @AfterClass(alwaysRun = true)
+   // @AfterMethod(alwaysRun = true)
     public void quitDriver() {
         if (androidDriver != null) {
             androidDriver.quit();
@@ -120,7 +122,7 @@ public class BaseTest extends AndroidDrivers {
     }
 
     public static String randomName() {
-        return "NAME "+RandomStringUtils.randomAlphabetic(3).toUpperCase();
+        return "Test_Moments_"+RandomStringUtils.randomAlphabetic(3).toLowerCase();
     }
 
 

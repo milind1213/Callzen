@@ -1,0 +1,610 @@
+[22:04:55] INFO  Pages.callzen.CallzenWeb - Clicked on 'Global'Button
+[22:04:55] INFO  Pages.callzen.CallzenWeb - Clicked on 'Positive'Button
+[22:04:55] INFO  Pages.callzen.CallzenWeb - Clicked on Select Conversation Element 
+[22:04:56] INFO  Pages.callzen.CallzenWeb - Clicked on'Call' DropDown Options
+[22:04:56] INFO  Pages.callzen.CallzenWeb - Clicking on 'Select Dropdown'
+[22:04:56] INFO  Pages.callzen.CallzenWeb - Clicking on 'Select All'
+[22:04:57] INFO  Pages.callzen.CallzenWeb - Clicked on the 'Conditional Moment' checkbox
+[22:04:57] INFO  Pages.callzen.CallzenWeb - Clicked on the 'Select Parent Moment' dropdown
+[22:04:57] INFO  Pages.callzen.CallzenWeb - Clicked on the first parent moment
+[22:04:58] INFO  Pages.callzen.CallzenWeb - Clicked on 'Next' Button 
+[22:04:58] INFO  TestCases.callzen.WebTestCases.Momentspage - Selecting the 'Semantic Moment' & Entering Search 'Thank you for your assistance.' Sentence 
+[22:04:59] INFO  Pages.callzen.CallzenWeb - Clicked on 'Semantic Moment' and Entered the search Is the property still available for rent?
+[22:04:59] INFO  Pages.callzen.CallzenWeb - Pressed the 'Enter' Key 
+[22:05:02] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[22:05:02] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[22:05:02] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[22:05:02] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[22:05:02] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[22:05:02] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[22:05:02] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[22:05:03] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[22:05:03] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[22:05:03] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[22:05:10] INFO  Pages.callzen.CallzenWeb - 'Highlight' Button not found
+[22:05:11] INFO  Pages.callzen.CallzenWeb - Clicked on 'Next' Button 
+[22:05:16] INFO  Pages.callzen.CallzenWeb - 'Phrase does not match.'Take Action button appeared.
+[22:05:16] INFO  Pages.callzen.CallzenWeb - Clicked on Take Action Button 
+[22:05:18] INFO  Pages.callzen.CallzenWeb - Clicked on Add anyway Action Button
+[22:05:20] INFO  Pages.callzen.CallzenWeb - 'Error : Cluster Error Occurred'
+[22:05:20] INFO  Pages.callzen.CallzenWeb - Clicked on 'Add Anyway' Button
+[22:05:20] INFO  Pages.callzen.CallzenWeb - Clicked on 'Add Anyway' Button
+[22:05:22] INFO  Pages.callzen.CallzenWeb - Clicked on 'Next' Button 
+[22:05:27] INFO  Pages.callzen.CallzenWeb - Clicked on 'Feedback' button
+[22:05:31] INFO  Pages.callzen.CallzenWeb - Clicked on 'Submit' button
+[22:05:38] INFO  Pages.callzen.CallzenWeb - Clicked on 'Submit' button
+[22:05:46] INFO  TestCases.callzen.WebTestCases.Momentspage - Submitted the FeedBack Successfully
+[22:05:46] INFO  Pages.callzen.CallzenWeb - Clicking on Tag from Now Button
+[22:05:48] INFO  Pages.callzen.CallzenWeb - Entering from Bulk Tagging 010320241610
+[22:05:48] INFO  Pages.callzen.CallzenWeb - Entering from Bulk Tagging To280320242204
+[22:05:48] INFO  TestCases.callzen.WebTestCases.Momentspage - Successfully 'firefox' Browser closed
+[22:09:00] INFO  TestCases.callzen.WebTestCases.Momentspage - Successfully Launched 'firefox' Browser
+[22:09:09] INFO  TestCases.callzen.WebTestCases.Momentspage - Navigated to: https://beta-new.callzen.ai/
+[22:09:09] INFO  Pages.callzen.CallzenWeb - Entering Email: system@callzen.ai
+[22:09:09] INFO  Pages.callzen.CallzenWeb - Entering Password: bfM6PVoXLaop5w
+[22:09:09] INFO  Pages.callzen.CallzenWeb - Clicking on 'Sign In' Button
+[22:09:09] INFO  TestCases.callzen.WebTestCases.Momentspage - Selecting the 'Moments' from Header
+[22:09:11] INFO  TestCases.callzen.WebTestCases.Momentspage - EnteringSemantic_Moment_testacex,Clicking on Global and Positive
+[22:09:12] INFO  Pages.callzen.CallzenWeb - Clicked on Create Moment Button
+[22:09:13] INFO  Pages.callzen.CallzenWeb - Entered Moment Name 'Semantic_Moment_testacex' in text Field
+[22:09:13] INFO  Pages.callzen.CallzenWeb - Clicked on 'Global'Button
+[22:09:13] INFO  Pages.callzen.CallzenWeb - Clicked on 'Positive'Button
+[22:09:13] INFO  Pages.callzen.CallzenWeb - Clicked on Select Conversation Element 
+[22:09:13] INFO  Pages.callzen.CallzenWeb - Clicked on'Call' DropDown Options
+[22:09:13] INFO  Pages.callzen.CallzenWeb - Clicking on 'Select Dropdown'
+[22:09:14] INFO  Pages.callzen.CallzenWeb - Clicking on 'Select All'
+[22:09:14] INFO  Pages.callzen.CallzenWeb - Clicked on the 'Conditional Moment' checkbox
+[22:09:14] INFO  Pages.callzen.CallzenWeb - Clicked on the 'Select Parent Moment' dropdown
+[22:09:15] INFO  Pages.callzen.CallzenWeb - Clicked on the first parent moment
+[22:09:16] INFO  Pages.callzen.CallzenWeb - Clicked on 'Next' Button 
+[22:09:16] INFO  TestCases.callzen.WebTestCases.Momentspage - Selecting the 'Semantic Moment' & Entering Search 'Can I get a trial' Sentence 
+[22:09:16] INFO  Pages.callzen.CallzenWeb - Clicked on 'Semantic Moment' and Entered the search Is the property still available for rent?
+[22:09:17] INFO  Pages.callzen.CallzenWeb - Pressed the 'Enter' Key 
+[22:09:19] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[22:09:19] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[22:09:20] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[22:09:20] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[22:09:20] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[22:09:20] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[22:09:20] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[22:09:20] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[22:09:20] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[22:09:21] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[22:09:23] INFO  Pages.callzen.CallzenWeb - 'Highlight' Button Appeared
+[22:09:23] INFO  Pages.callzen.CallzenWeb - Error occurred while clicking on Cross icon number 1: Error {
+  message='Element is not attached to the DOM
+  name='Error
+  stack='Error: Element is not attached to the DOM
+    at throwRetargetableDOMError (/tmp/playwright-java-14862005618942519249/package/lib/server/dom.js:812:46)
+    at ElementHandle._waitAndScrollIntoViewIfNeeded (/tmp/playwright-java-14862005618942519249/package/lib/server/dom.js:195:22)
+    at async ProgressController.run (/tmp/playwright-java-14862005618942519249/package/lib/server/progress.js:91:22)
+    at async ElementHandleDispatcher.scrollIntoViewIfNeeded (/tmp/playwright-java-14862005618942519249/package/lib/server/dispatchers/elementHandlerDispatcher.js:121:5)
+    at async LongStandingScope._race (/tmp/playwright-java-14862005618942519249/package/lib/utils/manualPromise.js:96:14)
+    at async ElementHandleDispatcher._handleCommand (/tmp/playwright-java-14862005618942519249/package/lib/server/dispatchers/dispatcher.js:96:14)
+    at async DispatcherConnection.dispatch (/tmp/playwright-java-14862005618942519249/package/lib/server/dispatchers/dispatcher.js:362:22)
+}
+Call log:
+-   waiting for element to be stable
+-   element is stable
+
+[22:09:24] INFO  Pages.callzen.CallzenWeb - Clicked on 'Next' Button 
+[22:09:28] INFO  Pages.callzen.CallzenWeb - 'Phrase does not match.'Take Action button appeared.
+[22:09:28] INFO  Pages.callzen.CallzenWeb - Clicked on Take Action Button 
+[22:09:30] INFO  Pages.callzen.CallzenWeb - Clicked on Add anyway Action Button
+[22:09:32] INFO  Pages.callzen.CallzenWeb - Clicked on Take Action Button 
+[22:09:34] INFO  Pages.callzen.CallzenWeb - Clicked on Add anyway Action Button
+[22:09:36] INFO  Pages.callzen.CallzenWeb - Clicked on Take Action Button 
+[22:09:39] INFO  Pages.callzen.CallzenWeb - Clicked on Add anyway Action Button
+[22:09:41] INFO  Pages.callzen.CallzenWeb - 'Error : Cluster Error Occurred'
+[22:09:41] INFO  Pages.callzen.CallzenWeb - Clicked on 'Add Anyway' Button
+[22:09:42] INFO  Pages.callzen.CallzenWeb - Clicked on 'Next' Button 
+[22:09:49] INFO  Pages.callzen.CallzenWeb - Clicked on 'Feedback' button
+[22:09:54] INFO  Pages.callzen.CallzenWeb - Clicked on 'Submit' button
+[22:10:01] INFO  Pages.callzen.CallzenWeb - Clicked on 'Submit' button
+[22:10:09] INFO  TestCases.callzen.WebTestCases.Momentspage - Submitted the FeedBack Successfully
+[22:10:09] INFO  Pages.callzen.CallzenWeb - Clicking on Tag from Now Button
+[22:10:11] INFO  Pages.callzen.CallzenWeb - Entering from Bulk Tagging 010320241610
+[22:11:18] INFO  TestCases.callzen.WebTestCases.Momentspage - Successfully Launched 'firefox' Browser
+[22:11:29] INFO  TestCases.callzen.WebTestCases.Momentspage - Navigated to: https://beta-new.callzen.ai/
+[22:11:29] INFO  Pages.callzen.CallzenWeb - Entering Email: system@callzen.ai
+[22:11:29] INFO  Pages.callzen.CallzenWeb - Entering Password: bfM6PVoXLaop5w
+[22:11:29] INFO  Pages.callzen.CallzenWeb - Clicking on 'Sign In' Button
+[22:11:29] INFO  TestCases.callzen.WebTestCases.Momentspage - Selecting the 'Moments' from Header
+[22:11:33] INFO  TestCases.callzen.WebTestCases.Momentspage - EnteringSemantic_Moment_testrvky,Clicking on Global and Positive
+[22:11:35] INFO  Pages.callzen.CallzenWeb - Clicked on Create Moment Button
+[22:11:35] INFO  Pages.callzen.CallzenWeb - Entered Moment Name 'Semantic_Moment_testrvky' in text Field
+[22:11:35] INFO  Pages.callzen.CallzenWeb - Clicked on 'Global'Button
+[22:11:35] INFO  Pages.callzen.CallzenWeb - Clicked on 'Positive'Button
+[22:11:35] INFO  Pages.callzen.CallzenWeb - Clicked on Select Conversation Element 
+[22:11:35] INFO  Pages.callzen.CallzenWeb - Clicked on'Call' DropDown Options
+[22:11:35] INFO  Pages.callzen.CallzenWeb - Clicking on 'Select Dropdown'
+[22:11:36] INFO  Pages.callzen.CallzenWeb - Clicking on 'Select All'
+[22:11:36] INFO  Pages.callzen.CallzenWeb - Clicked on the 'Conditional Moment' checkbox
+[22:11:36] INFO  Pages.callzen.CallzenWeb - Clicked on the 'Select Parent Moment' dropdown
+[22:11:37] INFO  Pages.callzen.CallzenWeb - Clicked on the first parent moment
+[22:11:39] INFO  Pages.callzen.CallzenWeb - Clicked on 'Next' Button 
+[22:11:39] INFO  TestCases.callzen.WebTestCases.Momentspage - Selecting the 'Semantic Moment' & Entering Search 'Need consultation services' Sentence 
+[22:11:40] INFO  Pages.callzen.CallzenWeb - Clicked on 'Semantic Moment' and Entered the search Is the property still available for rent?
+[22:11:40] INFO  Pages.callzen.CallzenWeb - Pressed the 'Enter' Key 
+[22:11:42] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[22:11:42] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[22:11:42] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[22:11:42] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[22:11:42] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[22:11:42] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[22:11:42] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[22:11:43] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[22:11:43] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[22:11:43] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[22:11:45] INFO  Pages.callzen.CallzenWeb - 'Highlight' Button Appeared
+[22:11:45] INFO  Pages.callzen.CallzenWeb - Error occurred while clicking on Cross icon number 1: Error {
+  message='Element is not attached to the DOM
+  name='Error
+  stack='Error: Element is not attached to the DOM
+    at throwRetargetableDOMError (/tmp/playwright-java-10075216341592367651/package/lib/server/dom.js:812:46)
+    at ElementHandle._waitAndScrollIntoViewIfNeeded (/tmp/playwright-java-10075216341592367651/package/lib/server/dom.js:195:22)
+    at async ProgressController.run (/tmp/playwright-java-10075216341592367651/package/lib/server/progress.js:91:22)
+    at async ElementHandleDispatcher.scrollIntoViewIfNeeded (/tmp/playwright-java-10075216341592367651/package/lib/server/dispatchers/elementHandlerDispatcher.js:121:5)
+    at async LongStandingScope._race (/tmp/playwright-java-10075216341592367651/package/lib/utils/manualPromise.js:96:14)
+    at async ElementHandleDispatcher._handleCommand (/tmp/playwright-java-10075216341592367651/package/lib/server/dispatchers/dispatcher.js:96:14)
+    at async DispatcherConnection.dispatch (/tmp/playwright-java-10075216341592367651/package/lib/server/dispatchers/dispatcher.js:362:22)
+}
+Call log:
+-   waiting for element to be stable
+-   element is stable
+
+[22:11:47] INFO  Pages.callzen.CallzenWeb - Clicked on 'Next' Button 
+[22:11:53] INFO  Pages.callzen.CallzenWeb - 'Error : Cluster Error Occurred'
+[22:11:53] INFO  Pages.callzen.CallzenWeb - Clicked on 'Add Anyway' Button
+[22:12:24] INFO  TestCases.callzen.WebTestCases.Momentspage - Successfully 'firefox' Browser closed
+[22:16:11] INFO  TestCases.callzen.WebTestCases.Momentspage - Successfully Launched 'firefox' Browser
+[22:16:19] INFO  TestCases.callzen.WebTestCases.Momentspage - Navigated to: https://beta-new.callzen.ai/
+[22:16:19] INFO  Pages.callzen.CallzenWeb - Entering Email: system@callzen.ai
+[22:16:19] INFO  Pages.callzen.CallzenWeb - Entering Password: bfM6PVoXLaop5w
+[22:16:19] INFO  Pages.callzen.CallzenWeb - Clicking on 'Sign In' Button
+[22:16:19] INFO  TestCases.callzen.WebTestCases.Momentspage - Selecting the 'Moments' from Header
+[22:16:24] INFO  TestCases.callzen.WebTestCases.Momentspage - EnteringSemantic_Moment_testxxmz,Clicking on Global and Positive
+[22:16:25] INFO  Pages.callzen.CallzenWeb - Clicked on Create Moment Button
+[22:16:25] INFO  Pages.callzen.CallzenWeb - Entered Moment Name 'Semantic_Moment_testxxmz' in text Field
+[22:16:26] INFO  Pages.callzen.CallzenWeb - Clicked on 'Global'Button
+[22:16:26] INFO  Pages.callzen.CallzenWeb - Clicked on 'Positive'Button
+[22:16:26] INFO  Pages.callzen.CallzenWeb - Clicked on Select Conversation Element 
+[22:16:26] INFO  Pages.callzen.CallzenWeb - Clicked on'Call' DropDown Options
+[22:16:26] INFO  Pages.callzen.CallzenWeb - Clicking on 'Select Dropdown'
+[22:16:27] INFO  Pages.callzen.CallzenWeb - Clicking on 'Select All'
+[22:16:27] INFO  Pages.callzen.CallzenWeb - Clicked on the 'Conditional Moment' checkbox
+[22:16:27] INFO  Pages.callzen.CallzenWeb - Clicked on the 'Select Parent Moment' dropdown
+[22:16:27] INFO  Pages.callzen.CallzenWeb - Clicked on the first parent moment
+[22:16:29] INFO  Pages.callzen.CallzenWeb - Clicked on 'Next' Button 
+[22:16:29] INFO  TestCases.callzen.WebTestCases.Momentspage - Selecting the 'Semantic Moment' & Entering Search 'Booking cancellation' Sentence 
+[22:16:29] INFO  Pages.callzen.CallzenWeb - Clicked on 'Semantic Moment' and Entered the search Is the property still available for rent?
+[22:16:29] INFO  Pages.callzen.CallzenWeb - Pressed the 'Enter' Key 
+[22:16:32] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[22:16:32] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[22:16:32] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[22:16:33] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[22:16:33] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[22:16:33] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[22:16:33] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[22:16:33] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[22:16:33] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[22:16:33] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[22:16:40] INFO  Pages.callzen.CallzenWeb - 'Highlight' Button not found
+[22:16:42] INFO  Pages.callzen.CallzenWeb - Clicked on 'Next' Button 
+[22:16:47] INFO  Pages.callzen.CallzenWeb - 'Phrase does not match.'Take Action button appeared.
+[22:16:47] INFO  Pages.callzen.CallzenWeb - Clicked on Take Action Button 
+[22:16:49] INFO  Pages.callzen.CallzenWeb - Clicked on Add anyway Action Button
+[22:16:49] INFO  Pages.callzen.CallzenWeb - Clicked on Take Action Button 
+[22:16:52] INFO  Pages.callzen.CallzenWeb - Clicked on Add anyway Action Button
+[22:16:52] INFO  Pages.callzen.CallzenWeb - Clicked on Take Action Button 
+[22:16:54] INFO  Pages.callzen.CallzenWeb - Clicked on Add anyway Action Button
+[22:16:54] INFO  Pages.callzen.CallzenWeb - 'Error : Cluster Error Occurred'
+[22:16:55] INFO  Pages.callzen.CallzenWeb - Clicked on 'Add Anyway' Button
+[22:16:56] INFO  Pages.callzen.CallzenWeb - Clicked on 'Next' Button 
+[22:17:02] INFO  Pages.callzen.CallzenWeb - Clicked on 'Feedback' button
+[22:17:07] INFO  Pages.callzen.CallzenWeb - Clicked on 'Submit' button
+[22:17:14] INFO  Pages.callzen.CallzenWeb - Clicked on 'Submit' button
+[22:17:23] INFO  TestCases.callzen.WebTestCases.Momentspage - Submitted the FeedBack Successfully
+[22:17:23] INFO  Pages.callzen.CallzenWeb - Clicking on Tag from Now Button
+[22:17:25] INFO  Pages.callzen.CallzenWeb - Entering from Bulk Tagging 010320241610
+[22:17:25] INFO  TestCases.callzen.WebTestCases.Momentspage - Successfully 'firefox' Browser closed
+[22:28:44] INFO  TestCases.callzen.WebTestCases.Momentspage - Successfully Launched 'firefox' Browser
+[22:29:07] INFO  TestCases.callzen.WebTestCases.Momentspage - Navigated to: https://beta-new.callzen.ai/
+[22:29:07] INFO  Pages.callzen.CallzenWeb - Entering Email: system@callzen.ai
+[22:29:07] INFO  Pages.callzen.CallzenWeb - Entering Password: bfM6PVoXLaop5w
+[22:29:07] INFO  Pages.callzen.CallzenWeb - Clicking on 'Sign In' Button
+[22:29:08] INFO  TestCases.callzen.WebTestCases.Momentspage - Selecting the 'Moments' from Header
+[22:29:12] INFO  TestCases.callzen.WebTestCases.Momentspage - EnteringSemantic_Moment_testmsdm,Clicking on Global and Positive
+[22:29:13] INFO  Pages.callzen.CallzenWeb - Clicked on Create Moment Button
+[22:29:14] INFO  Pages.callzen.CallzenWeb - Entered Moment Name 'Semantic_Moment_testmsdm' in text Field
+[22:29:14] INFO  Pages.callzen.CallzenWeb - Clicked on 'Global'Button
+[22:29:14] INFO  Pages.callzen.CallzenWeb - Clicked on 'Positive'Button
+[22:29:14] INFO  Pages.callzen.CallzenWeb - Clicked on Select Conversation Element 
+[22:29:14] INFO  Pages.callzen.CallzenWeb - Clicked on'Call' DropDown Options
+[22:29:15] INFO  Pages.callzen.CallzenWeb - Clicking on 'Select Dropdown'
+[22:29:15] INFO  Pages.callzen.CallzenWeb - Clicking on 'Select All'
+[22:29:15] INFO  Pages.callzen.CallzenWeb - Clicked on the 'Conditional Moment' checkbox
+[22:29:16] INFO  Pages.callzen.CallzenWeb - Clicked on the 'Select Parent Moment' dropdown
+[22:29:16] INFO  Pages.callzen.CallzenWeb - Clicked on the first parent moment
+[22:29:17] INFO  Pages.callzen.CallzenWeb - Clicked on 'Next' Button 
+[22:29:17] INFO  TestCases.callzen.WebTestCases.Momentspage - Selecting the 'Semantic Moment' & Entering Search 'Service could be better.' Sentence 
+[22:29:18] INFO  Pages.callzen.CallzenWeb - Clicked on 'Semantic Moment' and Entered the search Is the property still available for rent?
+[22:29:18] INFO  Pages.callzen.CallzenWeb - Pressed the 'Enter' Key 
+[22:29:20] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[22:29:20] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[22:29:20] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[22:29:21] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[22:29:21] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[22:29:21] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[22:29:21] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[22:29:22] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[22:29:22] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[22:29:22] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[22:29:24] INFO  Pages.callzen.CallzenWeb - 'Highlight' Button Appeared
+[22:29:24] INFO  Pages.callzen.CallzenWeb - Error occurred while clicking on Cross icon number 1: Error {
+  message='Element is not attached to the DOM
+  name='Error
+  stack='Error: Element is not attached to the DOM
+    at throwRetargetableDOMError (/tmp/playwright-java-18358144877422413302/package/lib/server/dom.js:812:46)
+    at ElementHandle._waitAndScrollIntoViewIfNeeded (/tmp/playwright-java-18358144877422413302/package/lib/server/dom.js:195:22)
+    at async ProgressController.run (/tmp/playwright-java-18358144877422413302/package/lib/server/progress.js:91:22)
+    at async ElementHandleDispatcher.scrollIntoViewIfNeeded (/tmp/playwright-java-18358144877422413302/package/lib/server/dispatchers/elementHandlerDispatcher.js:121:5)
+    at async LongStandingScope._race (/tmp/playwright-java-18358144877422413302/package/lib/utils/manualPromise.js:96:14)
+    at async ElementHandleDispatcher._handleCommand (/tmp/playwright-java-18358144877422413302/package/lib/server/dispatchers/dispatcher.js:96:14)
+    at async DispatcherConnection.dispatch (/tmp/playwright-java-18358144877422413302/package/lib/server/dispatchers/dispatcher.js:362:22)
+}
+Call log:
+-   waiting for element to be stable
+-   element is stable
+
+[22:29:26] INFO  Pages.callzen.CallzenWeb - Clicked on 'Next' Button 
+[22:29:30] INFO  Pages.callzen.CallzenWeb - 'Phrase does not match.'Take Action button appeared.
+[22:29:30] INFO  Pages.callzen.CallzenWeb - Clicked on Take Action Button 
+[22:29:32] INFO  Pages.callzen.CallzenWeb - Clicked on Add anyway Action Button
+[22:29:32] INFO  Pages.callzen.CallzenWeb - Clicked on Take Action Button 
+[22:29:34] INFO  Pages.callzen.CallzenWeb - Clicked on Add anyway Action Button
+[22:29:35] INFO  Pages.callzen.CallzenWeb - 'Error : Cluster Error Occurred'
+[22:29:35] INFO  Pages.callzen.CallzenWeb - Clicked on 'Add Anyway' Button
+[22:29:36] INFO  Pages.callzen.CallzenWeb - Clicked on 'Next' Button 
+[22:29:41] INFO  Pages.callzen.CallzenWeb - Clicked on 'Feedback' button
+[22:29:46] INFO  Pages.callzen.CallzenWeb - Clicked on 'Submit' button
+[22:29:53] INFO  Pages.callzen.CallzenWeb - Clicked on 'Submit' button
+[22:30:02] INFO  TestCases.callzen.WebTestCases.Momentspage - Submitted the FeedBack Successfully
+[22:30:02] INFO  Pages.callzen.CallzenWeb - Clicking on Tag from Now Button
+[22:30:04] INFO  Pages.callzen.CallzenWeb - Entering from Bulk Tagging 1128350600
+[22:30:04] INFO  TestCases.callzen.WebTestCases.Momentspage - Successfully 'firefox' Browser closed
+[23:00:39] INFO  TestCases.callzen.WebTestCases.Momentspage - Successfully Launched 'firefox' Browser
+[23:00:42] INFO  TestCases.callzen.WebTestCases.Momentspage - Navigated to: https://beta-new.callzen.ai/
+[23:00:42] INFO  Pages.callzen.CallzenWeb - Entering Email: system@callzen.ai
+[23:00:50] INFO  TestCases.callzen.WebTestCases.Momentspage - Successfully 'firefox' Browser closed
+[23:01:02] INFO  TestCases.callzen.WebTestCases.Momentspage - Successfully Launched 'firefox' Browser
+[23:01:10] INFO  TestCases.callzen.WebTestCases.Momentspage - Navigated to: https://beta-new.callzen.ai/
+[23:01:10] INFO  Pages.callzen.CallzenWeb - Entering Email: system@callzen.ai
+[23:01:10] INFO  Pages.callzen.CallzenWeb - Entering Password: bfM6PVoXLaop5w
+[23:01:10] INFO  Pages.callzen.CallzenWeb - Clicking on 'Sign In' Button
+[23:01:10] INFO  TestCases.callzen.WebTestCases.Momentspage - Selecting the 'Moments' from Header
+[23:01:15] INFO  TestCases.callzen.WebTestCases.Momentspage - EnteringSemantic_Moment_testadcv,Clicking on Global and Positive
+[23:01:16] INFO  Pages.callzen.CallzenWeb - Clicked on Create Moment Button
+[23:01:16] INFO  Pages.callzen.CallzenWeb - Entered Moment Name 'Semantic_Moment_testadcv' in text Field
+[23:01:16] INFO  Pages.callzen.CallzenWeb - Clicked on 'Global'Button
+[23:01:17] INFO  Pages.callzen.CallzenWeb - Clicked on 'Positive'Button
+[23:01:17] INFO  Pages.callzen.CallzenWeb - Clicked on Select Conversation Element 
+[23:01:17] INFO  Pages.callzen.CallzenWeb - Clicked on'Call' DropDown Options
+[23:01:17] INFO  Pages.callzen.CallzenWeb - Clicking on 'Select Dropdown'
+[23:01:17] INFO  Pages.callzen.CallzenWeb - Clicking on 'Select All'
+[23:01:18] INFO  Pages.callzen.CallzenWeb - Clicked on the 'Conditional Moment' checkbox
+[23:01:18] INFO  Pages.callzen.CallzenWeb - Clicked on the 'Select Parent Moment' dropdown
+[23:01:18] INFO  Pages.callzen.CallzenWeb - Clicked on the first parent moment
+[23:01:19] INFO  Pages.callzen.CallzenWeb - Clicked on 'Next' Button 
+[23:01:19] INFO  TestCases.callzen.WebTestCases.Momentspage - Selecting the 'Semantic Moment' & Entering Search 'quotation for the renovation services' Sentence 
+[23:01:20] INFO  Pages.callzen.CallzenWeb - Clicked on 'Semantic Moment' and Entered the search Is the property still available for rent?
+[23:01:20] INFO  Pages.callzen.CallzenWeb - Pressed the 'Enter' Key 
+[23:01:22] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[23:01:22] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[23:01:22] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[23:01:23] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[23:01:23] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[23:01:23] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[23:01:23] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[23:01:24] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[23:01:24] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[23:01:24] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[23:01:26] INFO  Pages.callzen.CallzenWeb - 'Highlight' Button Appeared
+[23:01:26] INFO  Pages.callzen.CallzenWeb - Error occurred while clicking on Cross icon number 1: Error {
+  message='Element is not attached to the DOM
+  name='Error
+  stack='Error: Element is not attached to the DOM
+    at throwRetargetableDOMError (/tmp/playwright-java-5138469469156036254/package/lib/server/dom.js:812:46)
+    at ElementHandle._waitAndScrollIntoViewIfNeeded (/tmp/playwright-java-5138469469156036254/package/lib/server/dom.js:195:22)
+    at async ProgressController.run (/tmp/playwright-java-5138469469156036254/package/lib/server/progress.js:91:22)
+    at async ElementHandleDispatcher.scrollIntoViewIfNeeded (/tmp/playwright-java-5138469469156036254/package/lib/server/dispatchers/elementHandlerDispatcher.js:121:5)
+    at async LongStandingScope._race (/tmp/playwright-java-5138469469156036254/package/lib/utils/manualPromise.js:96:14)
+    at async ElementHandleDispatcher._handleCommand (/tmp/playwright-java-5138469469156036254/package/lib/server/dispatchers/dispatcher.js:96:14)
+    at async DispatcherConnection.dispatch (/tmp/playwright-java-5138469469156036254/package/lib/server/dispatchers/dispatcher.js:362:22)
+}
+Call log:
+-   waiting for element to be stable
+-   element is stable
+
+[23:01:26] INFO  Pages.callzen.CallzenWeb - Error occurred while clicking on Cross icon number 2: Error {
+  message='Element is not attached to the DOM
+  name='Error
+  stack='Error: Element is not attached to the DOM
+    at throwRetargetableDOMError (/tmp/playwright-java-5138469469156036254/package/lib/server/dom.js:812:46)
+    at /tmp/playwright-java-5138469469156036254/package/lib/server/dom.js:431:25
+    at async ProgressController.run (/tmp/playwright-java-5138469469156036254/package/lib/server/progress.js:91:22)
+    at async ElementHandleDispatcher.click (/tmp/playwright-java-5138469469156036254/package/lib/server/dispatchers/elementHandlerDispatcher.js:127:12)
+    at async LongStandingScope._race (/tmp/playwright-java-5138469469156036254/package/lib/utils/manualPromise.js:96:14)
+    at async ElementHandleDispatcher._handleCommand (/tmp/playwright-java-5138469469156036254/package/lib/server/dispatchers/dispatcher.js:96:14)
+    at async DispatcherConnection.dispatch (/tmp/playwright-java-5138469469156036254/package/lib/server/dispatchers/dispatcher.js:362:22)
+}
+Call log:
+- attempting click action
+-   waiting for element to be visible, enabled and stable
+
+[23:01:45] INFO  Pages.callzen.CallzenWeb - Clicked on 'Next' Button 
+[23:01:50] INFO  Pages.callzen.CallzenWeb - 'Error : Cluster Error Occurred'
+[23:01:50] INFO  Pages.callzen.CallzenWeb - Clicked on 'Add Anyway' Button
+[23:01:51] INFO  Pages.callzen.CallzenWeb - Clicked on 'Add Anyway' Button
+[23:01:52] INFO  Pages.callzen.CallzenWeb - Clicked on 'Next' Button 
+[23:01:56] INFO  Pages.callzen.CallzenWeb - Clicked on 'Feedback' button
+[23:01:59] INFO  Pages.callzen.CallzenWeb - Clicked on 'Submit' button
+[23:02:05] INFO  Pages.callzen.CallzenWeb - Clicked on 'Submit' button
+[23:02:14] INFO  TestCases.callzen.WebTestCases.Momentspage - Submitted the FeedBack Successfully
+[23:02:14] INFO  Pages.callzen.CallzenWeb - Clicking on Tag from Now Button
+[23:02:16] INFO  Pages.callzen.CallzenWeb - Entering from Bulk Tagging
+[23:02:16] INFO  TestCases.callzen.WebTestCases.Momentspage - Successfully 'firefox' Browser closed
+[23:03:29] INFO  TestCases.callzen.WebTestCases.Momentspage - Successfully Launched 'firefox' Browser
+[23:03:35] INFO  TestCases.callzen.WebTestCases.Momentspage - Navigated to: https://beta-new.callzen.ai/
+[23:03:35] INFO  Pages.callzen.CallzenWeb - Entering Email: system@callzen.ai
+[23:03:35] INFO  Pages.callzen.CallzenWeb - Entering Password: bfM6PVoXLaop5w
+[23:03:35] INFO  Pages.callzen.CallzenWeb - Clicking on 'Sign In' Button
+[23:03:35] INFO  TestCases.callzen.WebTestCases.Momentspage - Selecting the 'Moments' from Header
+[23:03:39] INFO  TestCases.callzen.WebTestCases.Momentspage - EnteringSemantic_Moment_testxvrz,Clicking on Global and Positive
+[23:03:40] INFO  Pages.callzen.CallzenWeb - Clicked on Create Moment Button
+[23:03:40] INFO  Pages.callzen.CallzenWeb - Entered Moment Name 'Semantic_Moment_testxvrz' in text Field
+[23:03:41] INFO  Pages.callzen.CallzenWeb - Clicked on 'Global'Button
+[23:03:41] INFO  Pages.callzen.CallzenWeb - Clicked on 'Positive'Button
+[23:03:41] INFO  Pages.callzen.CallzenWeb - Clicked on Select Conversation Element 
+[23:03:41] INFO  Pages.callzen.CallzenWeb - Clicked on'Call' DropDown Options
+[23:03:41] INFO  Pages.callzen.CallzenWeb - Clicking on 'Select Dropdown'
+[23:03:41] INFO  Pages.callzen.CallzenWeb - Clicking on 'Select All'
+[23:03:42] INFO  Pages.callzen.CallzenWeb - Clicked on the 'Conditional Moment' checkbox
+[23:03:42] INFO  Pages.callzen.CallzenWeb - Clicked on the 'Select Parent Moment' dropdown
+[23:03:42] INFO  Pages.callzen.CallzenWeb - Clicked on the first parent moment
+[23:03:44] INFO  Pages.callzen.CallzenWeb - Clicked on 'Next' Button 
+[23:03:44] INFO  TestCases.callzen.WebTestCases.Momentspage - Selecting the 'Semantic Moment' & Entering Search 'Planning to purchase or buy' Sentence 
+[23:03:44] INFO  Pages.callzen.CallzenWeb - Clicked on 'Semantic Moment' and Entered the search Is the property still available for rent?
+[23:03:44] INFO  Pages.callzen.CallzenWeb - Pressed the 'Enter' Key 
+[23:03:47] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[23:03:47] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[23:03:47] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[23:03:47] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[23:03:48] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[23:03:48] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[23:03:48] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[23:03:48] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[23:03:48] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[23:03:49] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[23:03:51] INFO  Pages.callzen.CallzenWeb - 'Highlight' Button Appeared
+[23:03:51] INFO  Pages.callzen.CallzenWeb - Error occurred while clicking on Cross icon number 1: Error {
+  message='Element is not attached to the DOM
+  name='Error
+  stack='Error: Element is not attached to the DOM
+    at throwRetargetableDOMError (/tmp/playwright-java-6029275848286906663/package/lib/server/dom.js:812:46)
+    at ElementHandle._waitAndScrollIntoViewIfNeeded (/tmp/playwright-java-6029275848286906663/package/lib/server/dom.js:195:22)
+    at async ProgressController.run (/tmp/playwright-java-6029275848286906663/package/lib/server/progress.js:91:22)
+    at async ElementHandleDispatcher.scrollIntoViewIfNeeded (/tmp/playwright-java-6029275848286906663/package/lib/server/dispatchers/elementHandlerDispatcher.js:121:5)
+    at async LongStandingScope._race (/tmp/playwright-java-6029275848286906663/package/lib/utils/manualPromise.js:96:14)
+    at async ElementHandleDispatcher._handleCommand (/tmp/playwright-java-6029275848286906663/package/lib/server/dispatchers/dispatcher.js:96:14)
+    at async DispatcherConnection.dispatch (/tmp/playwright-java-6029275848286906663/package/lib/server/dispatchers/dispatcher.js:362:22)
+}
+Call log:
+-   waiting for element to be stable
+-   element is stable
+
+[23:03:51] INFO  Pages.callzen.CallzenWeb - Error occurred while clicking on Cross icon number 2: Error {
+  message='Element is not attached to the DOM
+  name='Error
+  stack='Error: Element is not attached to the DOM
+    at throwRetargetableDOMError (/tmp/playwright-java-6029275848286906663/package/lib/server/dom.js:812:46)
+    at /tmp/playwright-java-6029275848286906663/package/lib/server/dom.js:431:25
+    at async ProgressController.run (/tmp/playwright-java-6029275848286906663/package/lib/server/progress.js:91:22)
+    at async ElementHandleDispatcher.click (/tmp/playwright-java-6029275848286906663/package/lib/server/dispatchers/elementHandlerDispatcher.js:127:12)
+    at async LongStandingScope._race (/tmp/playwright-java-6029275848286906663/package/lib/utils/manualPromise.js:96:14)
+    at async ElementHandleDispatcher._handleCommand (/tmp/playwright-java-6029275848286906663/package/lib/server/dispatchers/dispatcher.js:96:14)
+    at async DispatcherConnection.dispatch (/tmp/playwright-java-6029275848286906663/package/lib/server/dispatchers/dispatcher.js:362:22)
+}
+Call log:
+- attempting click action
+-   waiting for element to be visible, enabled and stable
+
+[23:03:59] INFO  Pages.callzen.CallzenWeb - Clicked on 'Next' Button 
+[23:04:04] INFO  Pages.callzen.CallzenWeb - 'Error : Cluster Error Occurred'
+[23:04:04] INFO  Pages.callzen.CallzenWeb - Clicked on 'Add Anyway' Button
+[23:04:05] INFO  Pages.callzen.CallzenWeb - Clicked on 'Next' Button 
+[23:04:08] INFO  Pages.callzen.CallzenWeb - Clicked on 'Feedback' button
+[23:04:12] INFO  Pages.callzen.CallzenWeb - Clicked on 'Submit' button
+[23:04:17] INFO  Pages.callzen.CallzenWeb - Clicked on 'Submit' button
+[23:04:25] INFO  TestCases.callzen.WebTestCases.Momentspage - Submitted the FeedBack Successfully
+[23:04:25] INFO  Pages.callzen.CallzenWeb - Clicking on Tag from Now Button
+[23:04:27] INFO  Pages.callzen.CallzenWeb - Entering from Bulk Tagging
+[23:04:28] INFO  TestCases.callzen.WebTestCases.Momentspage - Successfully 'firefox' Browser closed
+[23:10:55] INFO  TestCases.callzen.WebTestCases.Momentspage - Successfully Launched 'firefox' Browser
+[23:11:06] INFO  TestCases.callzen.WebTestCases.Momentspage - Navigated to: https://beta-new.callzen.ai/
+[23:11:06] INFO  Pages.callzen.CallzenWeb - Entering Email: system@callzen.ai
+[23:11:06] INFO  Pages.callzen.CallzenWeb - Entering Password: bfM6PVoXLaop5w
+[23:11:06] INFO  Pages.callzen.CallzenWeb - Clicking on 'Sign In' Button
+[23:11:06] INFO  TestCases.callzen.WebTestCases.Momentspage - Selecting the 'Moments' from Header
+[23:11:10] INFO  TestCases.callzen.WebTestCases.Momentspage - EnteringSemantic_Moment_testxbmc,Clicking on Global and Positive
+[23:11:12] INFO  Pages.callzen.CallzenWeb - Clicked on Create Moment Button
+[23:11:12] INFO  Pages.callzen.CallzenWeb - Entered Moment Name 'Semantic_Moment_testxbmc' in text Field
+[23:11:12] INFO  Pages.callzen.CallzenWeb - Clicked on 'Global'Button
+[23:11:12] INFO  Pages.callzen.CallzenWeb - Clicked on 'Positive'Button
+[23:11:12] INFO  Pages.callzen.CallzenWeb - Clicked on Select Conversation Element 
+[23:11:13] INFO  Pages.callzen.CallzenWeb - Clicked on'Call' DropDown Options
+[23:11:13] INFO  Pages.callzen.CallzenWeb - Clicking on 'Select Dropdown'
+[23:11:13] INFO  Pages.callzen.CallzenWeb - Clicking on 'Select All'
+[23:11:14] INFO  Pages.callzen.CallzenWeb - Clicked on the 'Conditional Moment' checkbox
+[23:11:14] INFO  Pages.callzen.CallzenWeb - Clicked on the 'Select Parent Moment' dropdown
+[23:11:14] INFO  Pages.callzen.CallzenWeb - Clicked on the first parent moment
+[23:11:15] INFO  Pages.callzen.CallzenWeb - Clicked on 'Next' Button 
+[23:11:15] INFO  TestCases.callzen.WebTestCases.Momentspage - Selecting the 'Semantic Moment' & Entering Search 'Which services do you offer better?' Sentence 
+[23:11:16] INFO  Pages.callzen.CallzenWeb - Clicked on 'Semantic Moment' and Entered the search Is the property still available for rent?
+[23:11:16] INFO  Pages.callzen.CallzenWeb - Pressed the 'Enter' Key 
+[23:11:19] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[23:11:19] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[23:11:19] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[23:11:19] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[23:11:19] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[23:11:19] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[23:11:20] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[23:11:20] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[23:11:20] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[23:11:20] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[23:11:27] INFO  Pages.callzen.CallzenWeb - 'Highlight' Button not found
+[23:11:28] INFO  Pages.callzen.CallzenWeb - Clicked on 'Next' Button 
+[23:11:34] INFO  Pages.callzen.CallzenWeb - 'Error : Cluster Error Occurred'
+[23:11:34] INFO  Pages.callzen.CallzenWeb - Clicked on 'Add Anyway' Button
+[23:11:43] INFO  Pages.callzen.CallzenWeb - Clicked on 'Next' Button 
+[23:11:47] INFO  Pages.callzen.CallzenWeb - Clicked on 'Feedback' button
+[23:11:51] INFO  Pages.callzen.CallzenWeb - Clicked on 'Submit' button
+[23:11:58] INFO  Pages.callzen.CallzenWeb - Clicked on 'Submit' button
+[23:12:06] INFO  TestCases.callzen.WebTestCases.Momentspage - Submitted the FeedBack Successfully
+[23:12:06] INFO  Pages.callzen.CallzenWeb - Clicking on Tag from Now Button
+[23:12:08] INFO  Pages.callzen.CallzenWeb - Entering from Bulk Tagging
+[23:12:08] INFO  TestCases.callzen.WebTestCases.Momentspage - Successfully 'firefox' Browser closed
+[23:17:50] INFO  TestCases.callzen.WebTestCases.Momentspage - Successfully Launched 'firefox' Browser
+[23:18:00] INFO  TestCases.callzen.WebTestCases.Momentspage - Navigated to: https://beta-new.callzen.ai/
+[23:18:00] INFO  Pages.callzen.CallzenWeb - Entering Email: system@callzen.ai
+[23:18:00] INFO  Pages.callzen.CallzenWeb - Entering Password: bfM6PVoXLaop5w
+[23:18:00] INFO  Pages.callzen.CallzenWeb - Clicking on 'Sign In' Button
+[23:18:00] INFO  TestCases.callzen.WebTestCases.Momentspage - Selecting the 'Moments' from Header
+[23:18:03] INFO  TestCases.callzen.WebTestCases.Momentspage - EnteringMoment_testssus,Clicking on Global and Positive
+[23:18:04] INFO  Pages.callzen.CallzenWeb - Clicked on Create Moment Button
+[23:18:04] INFO  Pages.callzen.CallzenWeb - Entered Moment Name 'Moment_testssus' in text Field
+[23:18:05] INFO  Pages.callzen.CallzenWeb - Clicked on 'Global'Button
+[23:18:05] INFO  Pages.callzen.CallzenWeb - Clicked on 'Positive'Button
+[23:18:05] INFO  Pages.callzen.CallzenWeb - Clicked on Select Conversation Element 
+[23:18:05] INFO  Pages.callzen.CallzenWeb - Clicked on'Call' DropDown Options
+[23:18:05] INFO  Pages.callzen.CallzenWeb - Clicking on 'Select Dropdown'
+[23:18:06] INFO  Pages.callzen.CallzenWeb - Clicking on 'Select All'
+[23:18:06] INFO  Pages.callzen.CallzenWeb - Clicked on the 'Conditional Moment' checkbox
+[23:18:06] INFO  Pages.callzen.CallzenWeb - Clicked on the 'Select Parent Moment' dropdown
+[23:18:06] INFO  Pages.callzen.CallzenWeb - Clicked on the first parent moment
+[23:18:08] INFO  Pages.callzen.CallzenWeb - Clicked on 'Next' Button 
+[23:18:08] INFO  TestCases.callzen.WebTestCases.Momentspage - Selecting the 'Semantic Moment' & Entering Search 'Schedule a cleaning appointment' Sentence 
+[23:18:08] INFO  Pages.callzen.CallzenWeb - Clicked on 'Semantic Moment' and Entered the search Is the property still available for rent?
+[23:18:08] INFO  Pages.callzen.CallzenWeb - Pressed the 'Enter' Key 
+[23:18:11] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[23:18:11] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[23:18:11] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[23:18:11] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[23:18:11] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[23:18:12] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[23:18:12] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[23:18:12] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[23:18:12] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[23:18:12] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[23:18:14] INFO  Pages.callzen.CallzenWeb - 'Highlight' Button Appeared
+[23:18:14] INFO  Pages.callzen.CallzenWeb - Error occurred while clicking on Cross icon number 1: Error {
+  message='Element is not attached to the DOM
+  name='Error
+  stack='Error: Element is not attached to the DOM
+    at throwRetargetableDOMError (/tmp/playwright-java-7842011425240631690/package/lib/server/dom.js:812:46)
+    at ElementHandle._waitAndScrollIntoViewIfNeeded (/tmp/playwright-java-7842011425240631690/package/lib/server/dom.js:195:22)
+    at async ProgressController.run (/tmp/playwright-java-7842011425240631690/package/lib/server/progress.js:91:22)
+    at async ElementHandleDispatcher.scrollIntoViewIfNeeded (/tmp/playwright-java-7842011425240631690/package/lib/server/dispatchers/elementHandlerDispatcher.js:121:5)
+    at async LongStandingScope._race (/tmp/playwright-java-7842011425240631690/package/lib/utils/manualPromise.js:96:14)
+    at async ElementHandleDispatcher._handleCommand (/tmp/playwright-java-7842011425240631690/package/lib/server/dispatchers/dispatcher.js:96:14)
+    at async DispatcherConnection.dispatch (/tmp/playwright-java-7842011425240631690/package/lib/server/dispatchers/dispatcher.js:362:22)
+}
+Call log:
+-   waiting for element to be stable
+-   element is stable
+
+[23:18:16] INFO  Pages.callzen.CallzenWeb - Clicked on 'Next' Button 
+[23:18:20] INFO  Pages.callzen.CallzenWeb - 'Phrase does not match.'Take Action button appeared.
+[23:18:21] INFO  Pages.callzen.CallzenWeb - Clicked on Take Action Button 
+[23:18:23] INFO  Pages.callzen.CallzenWeb - Clicked on Add anyway Action Button
+[23:18:23] INFO  Pages.callzen.CallzenWeb - Clicked on Take Action Button 
+[23:18:25] INFO  Pages.callzen.CallzenWeb - Clicked on Add anyway Action Button
+[23:18:25] INFO  Pages.callzen.CallzenWeb - 'Error : Cluster Error Occurred'
+[23:18:26] INFO  Pages.callzen.CallzenWeb - Clicked on 'Add Anyway' Button
+[23:18:27] INFO  Pages.callzen.CallzenWeb - Clicked on 'Next' Button 
+[23:18:31] INFO  Pages.callzen.CallzenWeb - Clicked on 'Feedback' button
+[23:18:36] INFO  Pages.callzen.CallzenWeb - Clicked on 'Submit' button
+[23:18:42] INFO  Pages.callzen.CallzenWeb - Clicked on 'Submit' button
+[23:18:51] INFO  TestCases.callzen.WebTestCases.Momentspage - Submitted the FeedBack Successfully
+[23:19:21] INFO  TestCases.callzen.WebTestCases.Momentspage - Successfully 'firefox' Browser closed
+[23:20:07] INFO  TestCases.callzen.WebTestCases.Momentspage - Successfully Launched 'firefox' Browser
+[23:20:17] INFO  TestCases.callzen.WebTestCases.Momentspage - Navigated to: https://beta-new.callzen.ai/
+[23:20:17] INFO  Pages.callzen.CallzenWeb - Entering Email: system@callzen.ai
+[23:20:17] INFO  Pages.callzen.CallzenWeb - Entering Password: bfM6PVoXLaop5w
+[23:20:18] INFO  Pages.callzen.CallzenWeb - Clicking on 'Sign In' Button
+[23:20:18] INFO  TestCases.callzen.WebTestCases.Momentspage - Selecting the 'Moments' from Header
+[23:20:21] INFO  TestCases.callzen.WebTestCases.Momentspage - EnteringMoment_testtbvu,Clicking on Global and Positive
+[23:20:22] INFO  Pages.callzen.CallzenWeb - Clicked on Create Moment Button
+[23:20:22] INFO  Pages.callzen.CallzenWeb - Entered Moment Name 'Moment_testtbvu' in text Field
+[23:20:22] INFO  Pages.callzen.CallzenWeb - Clicked on 'Global'Button
+[23:20:23] INFO  Pages.callzen.CallzenWeb - Clicked on 'Positive'Button
+[23:20:23] INFO  Pages.callzen.CallzenWeb - Clicked on Select Conversation Element 
+[23:20:23] INFO  Pages.callzen.CallzenWeb - Clicked on'Call' DropDown Options
+[23:20:23] INFO  Pages.callzen.CallzenWeb - Clicking on 'Select Dropdown'
+[23:20:23] INFO  Pages.callzen.CallzenWeb - Clicking on 'Select All'
+[23:20:24] INFO  Pages.callzen.CallzenWeb - Clicked on the 'Conditional Moment' checkbox
+[23:20:24] INFO  Pages.callzen.CallzenWeb - Clicked on the 'Select Parent Moment' dropdown
+[23:20:24] INFO  Pages.callzen.CallzenWeb - Clicked on the first parent moment
+[23:20:25] INFO  Pages.callzen.CallzenWeb - Clicked on 'Next' Button 
+[23:20:25] INFO  TestCases.callzen.WebTestCases.Momentspage - Selecting the 'Semantic Moment' & Entering Search 'Is the property still available for rent?' Sentence 
+[23:20:26] INFO  Pages.callzen.CallzenWeb - Clicked on 'Semantic Moment' and Entered the search Is the property still available for rent?
+[23:20:26] INFO  Pages.callzen.CallzenWeb - Pressed the 'Enter' Key 
+[23:20:28] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[23:20:28] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[23:20:28] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[23:20:28] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[23:20:28] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[23:20:28] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[23:20:29] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[23:20:29] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[23:20:29] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[23:20:29] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[23:20:36] INFO  Pages.callzen.CallzenWeb - 'Highlight' Button not found
+[23:20:37] INFO  Pages.callzen.CallzenWeb - Clicked on 'Next' Button 
+[23:20:43] INFO  Pages.callzen.CallzenWeb - 'Error : Cluster Error Occurred'
+[23:20:43] INFO  Pages.callzen.CallzenWeb - Clicked on 'Add Anyway' Button
+[23:20:43] INFO  Pages.callzen.CallzenWeb - Clicked on 'Add Anyway' Button
+[23:21:14] INFO  TestCases.callzen.WebTestCases.Momentspage - Successfully 'firefox' Browser closed
+[23:21:28] INFO  TestCases.callzen.WebTestCases.Momentspage - Successfully Launched 'firefox' Browser
+[23:21:37] INFO  TestCases.callzen.WebTestCases.Momentspage - Navigated to: https://beta-new.callzen.ai/
+[23:21:37] INFO  Pages.callzen.CallzenWeb - Entering Email: system@callzen.ai
+[23:21:37] INFO  Pages.callzen.CallzenWeb - Entering Password: bfM6PVoXLaop5w
+[23:21:38] INFO  Pages.callzen.CallzenWeb - Clicking on 'Sign In' Button
+[23:21:38] INFO  TestCases.callzen.WebTestCases.Momentspage - Selecting the 'Moments' from Header
+[23:21:40] INFO  TestCases.callzen.WebTestCases.Momentspage - EnteringMoment_testurpe,Clicking on Global and Positive
+[23:21:41] INFO  Pages.callzen.CallzenWeb - Clicked on Create Moment Button
+[23:21:41] INFO  Pages.callzen.CallzenWeb - Entered Moment Name 'Moment_testurpe' in text Field
+[23:21:42] INFO  Pages.callzen.CallzenWeb - Clicked on 'Global'Button
+[23:21:42] INFO  Pages.callzen.CallzenWeb - Clicked on 'Positive'Button
+[23:21:42] INFO  Pages.callzen.CallzenWeb - Clicked on Select Conversation Element 
+[23:21:42] INFO  Pages.callzen.CallzenWeb - Clicked on'Call' DropDown Options
+[23:21:43] INFO  Pages.callzen.CallzenWeb - Clicking on 'Select Dropdown'
+[23:21:43] INFO  Pages.callzen.CallzenWeb - Clicking on 'Select All'
+[23:21:43] INFO  Pages.callzen.CallzenWeb - Clicked on the 'Conditional Moment' checkbox
+[23:21:43] INFO  Pages.callzen.CallzenWeb - Clicked on the 'Select Parent Moment' dropdown
+[23:21:45] INFO  Pages.callzen.CallzenWeb - Clicked on the first parent moment
+[23:21:46] INFO  Pages.callzen.CallzenWeb - Clicked on 'Next' Button 
+[23:21:46] INFO  TestCases.callzen.WebTestCases.Momentspage - Selecting the 'Semantic Moment' & Entering Search 'I have an urgent requirement' Sentence 
+[23:21:47] INFO  Pages.callzen.CallzenWeb - Clicked on 'Semantic Moment' and Entered the search Is the property still available for rent?
+[23:21:48] INFO  Pages.callzen.CallzenWeb - Pressed the 'Enter' Key 
+[23:21:49] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[23:21:49] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[23:21:49] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[23:21:50] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[23:21:50] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[23:21:50] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[23:21:50] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[23:21:50] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[23:21:51] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[23:21:51] INFO  Pages.callzen.CallzenWeb - Clicking on 'Phrases Add' Button 
+[23:21:53] INFO  Pages.callzen.CallzenWeb - 'Highlight' Button Appeared

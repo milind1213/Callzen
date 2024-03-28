@@ -17,9 +17,9 @@ public class CommonPlaywright {
 
 
 
-    public static boolean isLocatorPresent(Page page, String selector, int timeoutSeconds) {
+    public static boolean isLocatorPresent(Page page, String selector, int sec) {
         try {
-            page.waitForSelector(selector, new Page.WaitForSelectorOptions().setTimeout(timeoutSeconds * 1000));
+            page.waitForSelector(selector, new Page.WaitForSelectorOptions().setTimeout(sec * 1000));
             return true;
         } catch (Exception e) {
             return false;
@@ -62,6 +62,19 @@ public class CommonPlaywright {
         public static void waitForElement(Page page, String selector, int seconds) throws InterruptedException{
             page.waitForSelector(selector, new Page.WaitForSelectorOptions().setTimeout(seconds * 1000));
         }
+
+        public static void scrollIntoView(Page page, String selector){
+            page.evaluate("locator => document.querySelector(locator).scrollIntoView()", selector);
+        }
+
+
+    public static void waitForLocatorClickable(Page page, String selector, int seconds) {
+        try {
+            page.waitForSelector(selector, new Page.WaitForSelectorOptions().setTimeout(seconds * 1000));
+        } catch (Exception e) {
+            System.err.println("Waited for element [" + selector + "] to be clickable for " + seconds + " seconds");
+        }
+    }
 
     protected static void addLogsExtentReport(String label, Map<String,Object> log) {
         extentTest.get().info(MarkupHelper.createLabel(label, ExtentColor.PURPLE));

@@ -13,39 +13,66 @@ import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Random;
+import java.util.*;
 import java.util.concurrent.TimeUnit;
 
 
 public class CommonConstants {
-      public static SEMANTIC_SENTENCE RANDOM_SEMANTIC() {
+
+
+
+    public static SEMANTIC_SENTENCE RANDOM_SEMANTIC() {
         Random random = new Random();
         return SEMANTIC_SENTENCE.values()[random.nextInt(SEMANTIC_SENTENCE.values().length)];
     }
 
-   public enum MOMENTS_VALUES{
-       SEMANTIC_MOMENT("Semantic Moment"),MOMENTS("Moments"),GLOBAL("Global"),POSITIVE("Positive"),AAD_ANYWAY("Add anyway"),SUGGEST_SIMMILER_PHRASES("Suggest similar phrases"),
-       DELET_PHRASES("Delete phrases");
 
+    public enum MOMENTS_VALUES {
+        SEMANTIC_MOMENT("Semantic Moment"), MOMENTS("Moments"), GLOBAL("Global"), POSITIVE("Positive"), AAD_ANYWAY("Add anyway"), SUGGEST_SIMMILER_PHRASES("Suggest similar phrases"),
+        DELET_PHRASES("Delete phrases"), FILTERED("Filtered"), TEAM("Team"), FILTER("Filter"),
+        KEYWORD_MOMENT("Keyword Moment"),INSTRUCTIONAL_MOMENT("Instructional Moment");
 
-       String value;
-       MOMENTS_VALUES(String s) {
-           value = s;
-       }
-       public String VALUE() {
-           return value;
-       }
-   }
-
-
-    public enum PROJECT
-    {
-        HS, LD, PS, RSB, SSN, common;
+        String value;
+        MOMENTS_VALUES(String s) {
+            value = s;
+        }
+        public String VALUE() {
+            return value;
+        }
     }
+
+    public static INST_EX1 RANDOM_INST() {
+        Random random = new Random();
+        return INST_EX1.values()[random.nextInt(INST_EX1.values().length)];
+    }
+
+
+    public enum CDR{
+        ID_URL("https://beta-new.callzen.ai/conversation-info?conversationId=8be8b399-3dca-4915-8bea-7fca8491e807&conversationType=call");
+        private final String keyword;
+        CDR(String keyword) {this.keyword = keyword;}
+        public String VALUE() {return keyword; }
+    }
+
+    public enum INST_EX1 {
+        CUSTOMER_GREET("Did the agent greet the customer?"),
+        INTRODUCE("Did the agent introduce himself/herself to the customer?"),
+        FOLLOWUP("Is it a follow-up call?"),
+        SALE_AGREEMENT("Did the agent inquire about sale agreement package purchase planning?"),
+        MAKE_PAYMENT("Did the agent discuss about making payment with the customer?"),
+        PAYMENT_ISSUES("Did the customer face issues while making payment?"),
+        TRANSFER_CALL("Did the agent transfer the call to the concerned department?"),
+        DROP_MAIL("Did the customer agree to drop mail related to service?"),
+        DELIVERY_LOCATION("Discussed about delivery location?"),
+        INFORM_WORKING_DAYS("Did the agent inform customers about working days?"),
+        CONNECT_AND_CONFIRM("Did the agent say, \"I will connect with you. Okay, if anything is required, yes, sir?\"");
+        private final String keyword;
+        INST_EX1(String keyword) {this.keyword = keyword;}
+        public String VALUE() {return keyword; }
+    }
+
 
     public enum SEMANTIC_SENTENCE {
         DISCOUNT("How much percentage discount will I get?"),
@@ -147,6 +174,14 @@ public class CommonConstants {
         }
     }
 
+
+
+    public static KEYWORD_TEXT RANDOM_KYWORD() {
+        Random random = new Random();
+        return KEYWORD_TEXT.values()[random.nextInt(KEYWORD_TEXT.values().length)];
+    }
+
+
     public enum KEYWORD_TEXT {
         GOOD_MORNING("Good morning"), GOOD_NIGHT("Good night"), PAYMENT("Payment"), SUBSCRIPTION("Subscription"), CANCELLED("Cancelled"),
         PROPERTY("Property"), PHONE_NUMBER("Phone Number"), COMPLETED("Completed"), SHIFTING_HOGAYA("Shifting hogaya"), REMAINING_PAYMENT("Remaining payment"),
@@ -167,8 +202,7 @@ public class CommonConstants {
         KEYWORD_TEXT(String keyword) {
             this.keyword = keyword;
         }
-
-        public String getKeyword() {
+        public String VALUE() {
             return keyword;
         }
     }
@@ -224,6 +258,10 @@ public class CommonConstants {
     }
 
 
+    public static String RANDOM_NAME() {
+        return "Test Moment_" + RandomStringUtils.randomAlphabetic(3).toLowerCase();
+    }
+
     public enum PAYMENT_OPTION {
         Total, Pay, Advance, Free, Discount, token, FINAL, full, Partial,
         TOKEN_PAYMENT("TOKEN"), FINAL_PAYMENT("final"), PAY_RENT("Pay Rent with Credit Card"),
@@ -245,44 +283,6 @@ public class CommonConstants {
         }
     }
 
-    public enum APARTMENT_TYPE {
-        APARTMENT("Apartment"),
-        INDEPENDENT_HOUSE_VILLA("Independent House/Villa"),
-        GATED_COMMUNITY_VILLA("Gated Community Villa"),
-        STANDALONE_BUILDING("Standalone Building");
-        String value;
-
-        APARTMENT_TYPE(String s) {
-            value = s;
-        }
-
-        public String getValue() {
-            return value;
-        }
-    }
-
-
-    public enum PROPERTY_TYPE {
-        OFFICE_SPACE("Office Space"),
-        CO_WORKING("Co-Working"),
-        RESTAURANT_CAFE("Restaurant/Cafe"),
-        SHOP("Shop"),
-        SHOWROOM("Showroom"),
-        INDUSTRIAL_BUILDING("Industrial Building"),
-        INDUSTRIAL_SHED("Industrial Shed"),
-        GODOWN_WAREHOUSE("Gowdown/Warehouse"),
-        OTHER_BUSINESS("Other business");
-
-        String value;
-
-        PROPERTY_TYPE(String s) {
-            value = s;
-        }
-
-        public String getValue() {
-            return value;
-        }
-    }
 
 
     public enum AVAILABILITY {
@@ -302,39 +302,6 @@ public class CommonConstants {
         }
     }
 
-    public enum ROOM_TYPE {
-        SINGLE_ROOM("Single Room"),
-        DOUBLE_SHARING("Double Sharing"),
-        TRIPLE_SHARING("Triple Sharing"),
-        FOUR_SHARING("Four Sharing");
-
-        String value;
-
-        ROOM_TYPE(String s) {
-            value = s;
-        }
-
-        public String getValue() {
-            return value;
-        }
-    }
-
-    public enum ROOM_TYPES {
-        SINGLE_ROOM("Single Room"),
-        SHARED_ROOM("Shared Room"),
-        SINGLE_ROOMS("Single room"),
-        SHARED_ROOMS("Shared room");
-
-        String value;
-
-        ROOM_TYPES(String s) {
-            value = s;
-        }
-
-        public String getValue() {
-            return value;
-        }
-    }
 
 
     public enum AGE {
@@ -419,25 +386,6 @@ public class CommonConstants {
     }
 
 
-    public enum WHO_WILL_SHOW {
-        NEED_HELP("Need help"),
-        NEIGHBOURS("Neighbours"),
-        FRIENDS("Friends/Relatives"),
-        OTHERS("Others"),
-        SECURITY("Security"),
-        TENANTS("Tenants");
-
-        String value;
-
-        WHO_WILL_SHOW(String s) {
-            value = s;
-        }
-
-        public String getValue() {
-            return value;
-        }
-    }
-
     public enum AVAILABLE_DAYS {
         EVERYDAY("Everyday"),
         WEEKDAYS("Weekdays"),
@@ -446,41 +394,6 @@ public class CommonConstants {
         String value;
 
         AVAILABLE_DAYS(String s) {
-            value = s;
-        }
-
-        public String getValue() {
-            return value;
-        }
-    }
-
-    public enum LOCALITY_TYPE {
-        MARKET_COMPLEX("Market Complex"),
-        MALL("Shopping Mall"),
-        RESIDENTIAL_AREA("Residential Area"),
-        STANDALONE_BUILDING("Standalone Building"),
-        INDUSTRIAL_AREA("Industrial Area"),
-        TECH_PARK("Tech Park"),
-        OFFICE_AREA("Office Area");
-        String value;
-
-        LOCALITY_TYPE(String s) {
-            value = s;
-        }
-
-        public String getValue() {
-            return value;
-        }
-    }
-
-
-    public enum LIFT {
-        NONE("None"),
-        PERSONAL("Personal"),
-        COMMON("Common");
-        String value;
-
-        LIFT(String s) {
             value = s;
         }
 
@@ -642,38 +555,6 @@ public class CommonConstants {
     }
 
 
-    public enum RA_ADDONS {
-
-        NOTARISEDAGREEMENT("Notarised Agreement"),
-        ESIGNAGREMENT("E-Sign Agreement"),
-        ONEDAYDELIVERY("Get One Day Delivery"),
-
-
-        MH(
-                "Extra visit in same city;" +
-                        "Extra visit within Maharashtra;" +
-                        "Extra visit within India;" +
-                        "Extra visit outside India;" +
-                        "I have my own device;" +
-                        "I require a device sent to me for use;" +
-                        "Personalised Assistance"
-        ),
-
-        NONMH(
-                "Notarised Agreement;" +
-                        "Personalised Assistance"
-        );
-
-        String value;
-
-        RA_ADDONS(String s) {
-            value = s;
-        }
-
-        public String toString() {
-            return value;
-        }
-    }
 
     public enum CHECKOUT_VALUES {
         AmexCardMsg("Amex cards are not supported currently"),
@@ -691,158 +572,6 @@ public class CommonConstants {
         }
     }
 
-    public enum OTHER_AMENITIES {
-        AIR_CONDITIONER("Air-Conditioner"),
-        CLUB("club"),
-        PLAY_GROUND("Playground"),
-        GAS("Gas"),
-        RAIN_WATER_HARVESTING("Rain Water Harvesting"),
-        SEWAGE("Sewage"),
-        POWER_BACKUP("Power Backup"),
-        LIFT("Lift"),
-        FIRE_ALARM("Fire-Alarm"),
-        HOUSE_KEEPER("House-Keeper"),
-        PARK("Park"),
-        SHOPPING_CENTER("Shopping Center"),
-        SWIMMING_POOL("Swimming Pool"),
-        INTERCOM("Intercom"),
-        VISITOR_PARKING("Visitor Parking"),
-        INTERNET("Internet");
-
-        String value;
-
-        OTHER_AMENITIES(String s) {
-            value = s;
-        }
-
-        public String getValue() {
-            return value;
-        }
-
-    }
-
-    public enum BUILDING_TYPE {
-        INDEPENDENT_HOUSE("Independent House"),
-        BUSINESS_PARK("Business Park"),
-        MALL("Mall"),
-        STANDALONE_BUILD("Standalone building"),
-        INDEPENDENT_SHOP("Independent shop");
-        String value;
-
-        BUILDING_TYPE(String s) {
-            value = s;
-        }
-
-        public String getValue() {
-            return value;
-        }
-    }
-
-    public enum Floor {
-        LOWER_BASEMENT("Lower Basement"),
-        UPPER_BASEMENT("Upper Basement"),
-        FULL_BUILDING("Full Building"),
-        GROUND("Ground"),
-        GROUND_ONLY("Ground Only");
-        String value;
-
-        Floor(String s) {
-            value = s;
-        }
-
-        public String getValue() {
-            return value;
-        }
-    }
-
-    public enum WASHROOM {
-        NO_WASHROOM("No Washroom"),
-        SHARED("Shared"),
-        PRIVATE("Private");
-        String value;
-
-        WASHROOM(String s) {
-            value = s;
-        }
-
-        public String getValue() {
-            return value;
-        }
-    }
-
-    public enum FOOD {
-        EGG_ONLY("Egg Only"),
-        VEG("Veg"),
-        NON_VEG("Non-Veg");
-        String value;
-
-        FOOD(String s) {
-            value = s;
-        }
-
-        public String getValue() {
-            return value;
-        }
-    }
-
-    public enum GATED_COMMUNITY {
-        DOES_NOT_MATTER("Does Not Matter"),
-        SECURITY_ONLY("Security Only"),
-        SECURITY_WITH_AMENITIES("Security with amenities");
-        String value;
-
-        GATED_COMMUNITY(String s) {
-            value = s;
-        }
-
-        public String getValue() {
-            return value;
-        }
-    }
-
-    public enum POWER_BACKUP_TRM {
-        DOES_NOT_MATTER("Does Not Matter"),
-        MANDATORY("Mandatory");
-        String value;
-
-        POWER_BACKUP_TRM(String s) {
-            value = s;
-        }
-
-        public String getValue() {
-            return value;
-        }
-    }
-
-    public enum RELOCATION {
-        INTER_CITY("Inter-City"),
-        DIFF_CITY_MOV("Different City Movement"),
-        SAME_CITY_MOV("Same City Movement"),
-        INTRA_CITY("Intra-City");
-        String value;
-
-        RELOCATION(String s) {
-            value = s;
-        }
-
-        public String getValue() {
-            return value;
-        }
-    }
-
-    public enum MyServices {
-        MY_TENANT_RM("My Tenant Relationship Manager"),
-        MY_OWNER_RM("My Owner Relationship Manager");
-        String value;
-
-        MyServices(String s) {
-            value = s;
-        }
-
-        public String getValue() {
-            return value;
-        }
-    }
 
     public enum CustomField {
         INTERESTED("Interested"),
@@ -859,204 +588,8 @@ public class CommonConstants {
         }
     }
 
-  /*  public enum FollowUpReasons {
-        FEEDBACK_AFTER_MOVEMENT("Feedback after Movement"),
-        PAYMENT_FOLLOWUP("Payment FollowUp"),
-        NC_BUSY_CALLBACK("NC/Busy/Call Back"),
-        cx_vENDOR("Negotiations with Cx & Vendor"),
-        High_Priority_FollowUp("High_Priority_FollowUp");
-
-        String value;
-
-        FollowUpReasons(String s) {
-            value = s;
-        }
-
-        public String getValue() {
-            return value;
-        }
-
+    public static String CURRENT_DATE() {
+        SimpleDateFormat currentDate = new SimpleDateFormat("ddMMyyyyHHmm");
+        return currentDate.format(new Date());
     }
-
-    public String[] getReport()
-    {
-        String[] reportPaths = new String[]{"", ""};
-        String snapshotPath = System.getProperty("user.dir") + "/ExtentReports/ReportSnapshot.png";
-        File reportScreenshotFile = new File(snapshotPath);
-
-        try
-        {
-            Thread.sleep(3000);
-            String htmlPath = ExtentManager.filepath;
-            if (htmlPath.isEmpty())
-            {
-                System.out.println("Report html path not specified");
-                return reportPaths;
-            }
-
-            // === Custom report === //
-            htmlPath = updateReportWithGraph(htmlPath);
-            // ===================== //
-
-            System.out.println("Taking report snapshot");
-            System.out.println(htmlPath);
-            WebDriver driver = webDriverReportDriver();
-            driver.get("file://" + htmlPath);
-
-            if (driver != null)
-            {
-                Dimension dimension = new Dimension(1200, 720);
-                driver.manage().window().setSize(dimension);
-                By dashboardContainer = By.xpath(".//*[@class='container-fluid p-4 view dashboard-view']");
-                JavascriptExecutor js = (JavascriptExecutor) driver;
-                js.executeScript("document.head.appendChild(document.createElement(\"style\")).innerHTML = \"div.header.navbar {position: relative; }\"");
-                WebElement dc = driver.findElement(dashboardContainer);
-                System.out.println("Obtaining Dashboard Screen");
-                Thread.sleep(3000);
-                Screenshot screenshot;
-                if (System.getProperty("os.name").contains("Server"))
-                    screenshot = new AShot().shootingStrategy(ShootingStrategies.viewportPasting(1000)).takeScreenshot(driver);
-                else if (System.getProperty("os.name").contains("Linux"))
-                    screenshot = new AShot().shootingStrategy(ShootingStrategies.viewportPasting(1000)).takeScreenshot(driver);
-                else
-                    screenshot = new AShot().shootingStrategy(ShootingStrategies.viewportPasting(ShootingStrategies.scaling(2f), 1000)).takeScreenshot(driver);
-
-                try
-                {
-                    Point point = dc.getLocation();
-                    int eleWidth = dc.getSize().getWidth();
-                    int eleHeight = dc.getSize().getHeight();
-                    BufferedImage eleScreenshot = screenshot.getImage().getSubimage(point.getX(), point.getY(), eleWidth, eleHeight);
-                    ImageIO.write(eleScreenshot, "PNG", reportScreenshotFile);
-                } catch (IOException e)
-                {
-                    System.err.println("Dashboard Exception");
-                    e.printStackTrace();
-                }
-            }
-            driver.close();
-            reportPaths[0] = htmlPath;
-            reportPaths[1] = snapshotPath;
-            return reportPaths;
-
-        } catch (Exception e)
-        {
-            System.err.println("Error opening result file");
-            e.printStackTrace();
-            return reportPaths;
-        }
-    }
-
-    public WebDriver webDriverReportDriver()
-    {
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("--no-sandbox");
-        options.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, true);
-        options.setExperimentalOption("useAutomationExtension", false);
-        options.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
-        options.addArguments("--start-maximized");
-        options.addArguments("--disable-web-security");
-        options.addArguments("--no-proxy-server");
-        //options.setPageLoadStrategy(PageLoadStrategy.EAGER);
-
-        if (getProperty(ReportingUtils.CommonConstants.PROJECT.common.toString(), CommonConstants.HTML_REPORT_HEADLESS).equalsIgnoreCase("true"))
-            options.addArguments("--headless");
-
-        options.addArguments("--disable-extensions");
-        options.addArguments("--dns-prefetch-disable");
-        options.addArguments("--disable-gpu");
-        options.addArguments("--disable-dev-shm-usage");
-
-        Map<String, Object> prefs = new HashMap<String, Object>();
-        prefs.put("credentials_enable_service", false);
-        prefs.put("profile.password_manager_enabled", false);
-        options.setExperimentalOption("prefs", prefs);
-        WebDriver webDriver = new ChromeDriver(options);
-
-        webDriver.manage().window().maximize();
-        webDriver.manage().timeouts().implicitlyWait(25, TimeUnit.SECONDS);
-        webDriver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
-        return webDriver;
-    }
-
-    String endTime;
-    public String updateReportWithGraph(String htmlPath)
-    {
-        String customReportFilepath;
-
-        System.out.println("Generating Custom report");
-
-        try
-        {
-            String workingDir = System.getProperty("user.dir");
-            String startTime = ExtentTestManager.time.replace("T", " Time: ");
-            if (endTime == null)
-                endTime = LocalDateTime.now().toString();
-            String reportHtml = FileUtil.readTemplateAsString(workingDir + "/resource/reportTemplates/reportHtml.tmpl");
-            customReport = new CustomReport(htmlPath, "UTF-8");
-            customReport.updateNodeInHtml(reportHtml, "div.card-body.pt-0 > div", "div.card-body.pt-0");
-            customReport.updateHtml("div.card-body>p+h3", startTime, 0);
-            customReport.updateHtml("div.card-body>p+h3", endTime, 1);
-            String reportData = FileUtil.readTemplateAsString(workingDir + "/resource/reportTemplates/reportData.tmpl");
-            String jsonData = FileUtil.readTemplateAsString(workingDir + "/resource/reportTemplates/reportLabel.tmpl");
-            String reportScript = FileUtil.readTemplateAsString(workingDir + "/resource/reportTemplates/reportScript.tmpl");
-
-            StringBuffer passBuffer = new StringBuffer();
-            StringBuffer failBuffer = new StringBuffer();
-            StringBuffer skipBuffer = new StringBuffer();
-            System.out.println(CommonConstants.EXTENT_METHOD_COUNT);
-            for (String e : CommonConstants.EXTENT_METHOD_COUNT.keySet())
-            {
-                int passCount = CommonConstants.EXTENT_METHOD_COUNT.get(e).get("PASS");
-                int failCount = CommonConstants.EXTENT_METHOD_COUNT.get(e).get("FAIL");
-                int skipCount = CommonConstants.EXTENT_METHOD_COUNT.get(e).get("SKIP");
-                passBuffer.append(jsonData.replace("_className_", e).replace("_value_", String.valueOf(passCount)));
-                failBuffer.append(jsonData.replace("_className_", e).replace("_value_", String.valueOf(failCount)));
-                skipBuffer.append(jsonData.replace("_className_", e).replace("_value_", String.valueOf(skipCount)));
-            }
-            customReport.updateHtml("div.card-header > p", "Automation Status");
-            reportData = reportData
-                    .replace("_passLabel_", passBuffer.substring(0, (passBuffer.length() - 1)))
-                    .replace("_failLabel_", failBuffer.substring(0, (passBuffer.length() - 1)))
-                    .replace("_skipLabel_", skipBuffer.substring(0, (skipBuffer.length() - 1)));
-
-            reportScript = reportScript.replace("_dataset_", reportData);
-
-            customReport.addScriptInHtml(reportScript, "body.spa.-report.standard");
-            customReportFilepath = customReport.generateCustomReport();
-            System.out.println("Custom report generated at [" + customReportFilepath + "]");
-            return customReportFilepath;
-        } catch (IOException e)
-        {
-            e.printStackTrace();
-            return htmlPath;
-        }
-    }
-
-    public static final String CHROME_USR_DIR_WIN = "chrome.usr.dir.win";
-    public static final String CHROME_USR_DIR_MAC = "chrome.usr.dir.mac";
-
-    public static String getProfileDirPath(String projectCode)
-    {
-        String dirPath = "_";
-        try
-        {
-            dirPath = System.getProperty("os.name").contains("Server") ?
-                    getProperty(projectCode, CommonConstants.CHROME_USR_DIR_WIN) :
-                    getProperty(projectCode, CommonConstants.CHROME_USR_DIR_MAC);
-
-            dirPath = System.getProperty("user.name").contains("admin") ? dirPath : dirPath.replace("admin", System.getProperty("user.name"));
-        } catch (Exception e)
-        {
-            System.err.println("Profile dir path not found " + e.getMessage());
-        } catch (Error e)
-        {
-            System.err.println("Profile dir path error " + e.getMessage());
-        }
-
-        return dirPath;
-    }
-*/
-
-
 }

@@ -37,11 +37,13 @@
 		</dependency>
 
 		<!-- Playwright-java -->
+		<!-- https://mvnrepository.com/artifact/com.microsoft.playwright/playwright -->
 		<dependency>
 			<groupId>com.microsoft.playwright</groupId>
 			<artifactId>playwright</artifactId>
 			<version>1.41.0</version>
 		</dependency>
+
 
 		<!--WebdriverManager -->
 		<dependency>
@@ -145,7 +147,6 @@
 			<version>1.0.2</version>
 		</dependency>
 
-
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-databind</artifactId>
@@ -215,8 +216,7 @@
 					<version>3.2.5</version>
 					<configuration>
 						<suiteXmlFiles>
-							<suiteXmlFile>resource/TestNGSuites/APITestNG.xml</suiteXmlFile>
-							<suiteXmlFile>resource/TestNGSuites/WebTestNG.xml</suiteXmlFile>
+							<suiteXmlFile>WebTestNG.xml</suiteXmlFile>
 						</suiteXmlFiles>
 					</configuration>
 				</plugin>

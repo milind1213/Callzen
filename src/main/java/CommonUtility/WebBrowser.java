@@ -1,6 +1,9 @@
 package CommonUtility;
+
 import com.microsoft.playwright.*;
+
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
@@ -44,7 +47,7 @@ public class WebBrowser {
     public static Page page;
     public boolean isHeadless;
 
-    public WebDriver init_driver(String browser) {
+    public WebDriver getSeleniumDriver(String browser) {
         if (browser.equalsIgnoreCase("chrome")) {
             ChromeOptions options = new ChromeOptions();
             isHeadless = Boolean.parseBoolean(config.callzenProp("Web").getProperty("headless"));
@@ -85,8 +88,9 @@ public class WebBrowser {
         driver.manage().deleteAllCookies();
         localDriver.set(driver);
     }
+
     public static synchronized WebDriver getDriver() {
-          return localDriver.get();
+        return localDriver.get();
     }
 
     public Page getPage(String webBrowser) {
@@ -104,24 +108,15 @@ public class WebBrowser {
                 threadLocalBrowser.set(getPlaywright().firefox().launch(new BrowserType.LaunchOptions()
                         .setHeadless((isHeadless))));
                 break;
-            case "edge":
-                threadLocalBrowser.set(getPlaywright().chromium().launch(new BrowserType.LaunchOptions()
-                        .setChannel("msedge").setHeadless((isHeadless))));
-                break;
+
             default:
                 System.out.println("please pass the right browser name......");
                 break;
         }
-            BrowserContext browserContext = getBrowser().newContext(new Browser.NewContextOptions()
-                    .setViewportSize(1366, 768)
-                    .setDeviceScaleFactor(0.8)
-            );
         threadLocalBrowserContext.set(getBrowser().newContext());
-        threadLocalPage.set(browserContext.newPage());
-        //threadLocalPage.set(getBrowserContext().newPage());
+        threadLocalPage.set(getBrowserContext().newPage());
         return getPage();
     }
 
-
-
 }
+

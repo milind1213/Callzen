@@ -15,8 +15,6 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
-import static TestCases.callzen.KeywordMomentsAPIs.baseURL;
-
 @Listeners(TestListeners.class)
 public class CallPage extends ConvozenAPIs {
     String baseURL, email, password, userId, csrftoken, sessionId, TotalCalls;

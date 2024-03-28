@@ -34,6 +34,16 @@ public class CommonSelenium {
 		js.executeScript("window.scrollBy(0, arguments[0]);", yOffset);
 	}
 
+	public void handleEleClickInterException(WebDriver driver, WebElement element) {
+		try {
+			((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
+			Actions actions = new Actions(driver);
+			actions.moveToElement(element).click().perform();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
 	public static WebElement waitForElementToBeClickable(WebDriver driver, By locator, int seconds) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(seconds));
 		return wait.until(ExpectedConditions.elementToBeClickable(locator));
@@ -85,8 +95,7 @@ public class CommonSelenium {
 		try {
 			new WebDriverWait(driver, Duration.ofSeconds(seconds)).until(ExpectedConditions.elementToBeClickable(by));
 		} catch (Exception e) {
-			System.err
-					.println("Waited for element [" + by.toString() + "] to be clickable for " + seconds + " seconds");
+			System.err.println("Waited for element [" + by.toString() + "] to be clickable for " + seconds + " seconds");
 		}
 	}
 
@@ -151,6 +160,16 @@ public class CommonSelenium {
 			driver.findElement(by);
 			return true;
 		} catch (org.openqa.selenium.NoSuchElementException e) {
+			return false;
+		}
+	}
+
+	public boolean isWebElementPresent(By locator, int duration) {
+		try {
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(duration));
+			wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+			return true;
+		} catch (NoSuchElementException | TimeoutException e) {
 			return false;
 		}
 	}
@@ -244,6 +263,12 @@ public class CommonSelenium {
 			e.printStackTrace();
 			Assert.fail("Failed to click on element");
 		}
+	}
+
+	public void sendKeysWithWait(By locator, String text , int seconds) {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(seconds)); // Adjust timeout as needed
+		WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+		element.sendKeys(text);
 	}
 
 	public static void drawBorder(WebDriver driver, WebElement element) {
